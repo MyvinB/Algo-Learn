@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author myvin
+ *
+ */
+module Algorithms {
+}
