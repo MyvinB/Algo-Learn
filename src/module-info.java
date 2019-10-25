@@ -5,5 +5,3 @@
  * @author myvin
  *
  */
-module Algorithms {
-}

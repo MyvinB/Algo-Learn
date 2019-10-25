@@ -1,4 +1,4 @@
-package default;
+
 public class LinkedList {
     static class Node {
         int value;
