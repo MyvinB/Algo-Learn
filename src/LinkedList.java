@@ -40,7 +40,12 @@ public class LinkedList {
             temp=temp.next;
 
         }
-        temp1.next=temp.next;
+        if(temp1==null){
+            head=temp.next;
+        }else{
+            temp1.next=temp.next;
+        }
+
 
     }
 
@@ -96,6 +101,7 @@ public class LinkedList {
         for (int i = -1; i > -4; i--) {
             insertFront(i);
         }
+        deleteData(-3);
 
         //reverseLink();
         while (head != null) {
