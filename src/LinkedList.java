@@ -1,3 +1,4 @@
+package default;
 public class LinkedList {
     static class Node {
         int value;
@@ -29,6 +30,18 @@ public class LinkedList {
         temp = head;
         head = n;
         head.next = temp;
+    }
+
+    static void deleteData(int value){
+        temp=head;
+        Node temp1=null;
+        while(temp.value!=value){
+            temp1=temp;
+            temp=temp.next;
+
+        }
+        temp1.next=temp.next;
+
     }
 
     static void insertMiddleAfter(int value, int k) {
@@ -84,7 +97,7 @@ public class LinkedList {
             insertFront(i);
         }
 
-        reverseLink();
+        //reverseLink();
         while (head != null) {
             System.out.println(head.value);
             head = head.next;

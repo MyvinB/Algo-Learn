@@ -1,6 +1,4 @@
-package learn;
-
-interface Sayable{  
+interface Sayable{
     void say();  
 }  
 public class MethodReference {  

@@ -1,5 +1,3 @@
-package learn;
-
 interface A{
 	void show();
 }
