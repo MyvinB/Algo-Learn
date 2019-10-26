@@ -25,6 +25,8 @@ public class LinkedList {
         }
     }
 
+
+
     static void insertFront(int value) {
         Node n = new Node(value);
         temp = head;
