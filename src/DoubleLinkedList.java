@@ -29,6 +29,8 @@ public class DoubleLinkedList {
     for(int i=0;i<4;i++){
         addEnd(i);
     }
+
+
     temp=front;
     while(temp!=null){
         System.out.println(temp.prev+"|"+temp.value+"|"+temp.next+"("+temp+")");
