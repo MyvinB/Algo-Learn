@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1940da77-86f4-42d2-915b-77dae772f3c0" name="Default Changelist" comment="Circular linked list with addidtion in front back and middle &#10;also deletion implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algo-Learn/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo-Learn/DoubleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo-Learn/HourGlass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo-Learn/HourGlass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HourGlass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HourGlass.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,8 @@
   </component>
   <component name="ProjectId" id="1ShwCU2SdGtjhiWvcI4YQ0FnoIo" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
