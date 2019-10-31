@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1940da77-86f4-42d2-915b-77dae772f3c0" name="Default Changelist" comment="Circular linked list with addidtion in front back and middle &#10;also deletion implemented">
-      <change afterPath="$PROJECT_DIR$/src/ReverseArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algo-Learn/LoopDetection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo-Learn/LoopDetection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo-Learn/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo-Learn/DoubleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleLinkedList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReverseArray">
+  <component name="RunManager" selected="Application.HourGlass">
     <configuration name="ArrayManipulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayManipulation" />
       <module name="Algo-Learn" />
@@ -48,15 +48,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CircularLinkedList" />
+    <configuration name="DoubleLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoubleLinkedList" />
       <module name="Algo-Learn" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList" />
+    <configuration name="HourGlass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HourGlass" />
       <module name="Algo-Learn" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,11 +78,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HourGlass" />
+        <item itemvalue="Application.DoubleLinkedList" />
         <item itemvalue="Application.ReverseArray" />
         <item itemvalue="Application.ArrayManipulation" />
         <item itemvalue="Application.LoopDetection" />
-        <item itemvalue="Application.LinkedList" />
-        <item itemvalue="Application.CircularLinkedList" />
       </list>
     </recent_temporary>
   </component>
