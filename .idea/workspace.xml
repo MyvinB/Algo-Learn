@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1940da77-86f4-42d2-915b-77dae772f3c0" name="Default Changelist" comment="Circular linked list with addidtion in front back and middle &#10;also deletion implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algo-Learn/HourGlass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo-Learn/HourGlass.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,21 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.QuickSort">
-    <configuration name="DoubleLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DoubleLinkedList" />
-      <module name="Algo-Learn" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HourGlass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HourGlass" />
-      <module name="Algo-Learn" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Scon">
     <configuration name="MergeSortPra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MergeSortPra" />
       <module name="Algo-Learn" />
@@ -77,13 +62,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scon" />
+      <module name="Algo-Learn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringCount" />
+      <module name="Algo-Learn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Scon" />
+        <item itemvalue="Application.StringCount" />
         <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.QuickSortPra" />
         <item itemvalue="Application.MergeSortPra" />
-        <item itemvalue="Application.HourGlass" />
-        <item itemvalue="Application.DoubleLinkedList" />
       </list>
     </recent_temporary>
   </component>
