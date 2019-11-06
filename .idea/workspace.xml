@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1940da77-86f4-42d2-915b-77dae772f3c0" name="Default Changelist" comment="Circular linked list with addidtion in front back and middle &#10;also deletion implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algo-Learn/Scon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo-Learn/Scon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algo-Learn/StringCount.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KMPString">
+  <component name="RunManager" selected="Application.StringCount">
     <configuration name="KMPString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KMPString" />
       <module name="Algo-Learn" />
@@ -80,9 +78,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringCount" />
         <item itemvalue="Application.KMPString" />
         <item itemvalue="Application.Scon" />
-        <item itemvalue="Application.StringCount" />
         <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.QuickSortPra" />
       </list>
