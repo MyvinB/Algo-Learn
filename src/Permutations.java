@@ -24,7 +24,7 @@ public class Permutations {
 
 
     public static void main(String[] args) {
-        String a="DTNGJPURFHYEW";
+        String a="ABC";
        printPermu(a,"");
         System.out.println(res);
         String[] s=res.split(" ");
