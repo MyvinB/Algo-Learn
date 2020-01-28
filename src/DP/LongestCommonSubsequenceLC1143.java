@@ -9,6 +9,23 @@ public class LongestCommonSubsequenceLC1143 {
 		  else if(text1.charAt(n1-1)==text2.charAt(n2-1))return 1+longestCommonSubsequence(text1.substring(0,n1-1), text2.substring(0,n2-1));
 		  else return Math.max(longestCommonSubsequence(text1.substring(0,n1-1), text2.substring(0,n2)),longestCommonSubsequence(text1.substring(0,n1), text2.substring(0,n2-1)));
 	  }
+	  ///
+	    
+	  /*
+	    This is what the DP table looks like filled out for the 2 strings
+	    "AGGTAB" and "GXTXAYB".
+	       ""  A  G  G  T  A  B
+	    ""  0  0  0  0  0  0  0
+	    G   0  0  1  1  1  1  1
+	    X   0  0  1  1  1  1  1
+	    T   0  0  1  1  2  2  2
+	    X   0  0  1  1  2  2  2
+	    A   0  1  1  1  2  3  3
+	    Y   0  1  1  1  2  3  3
+	    B   0  1  1  1  2  3  4
+	    Each cell is a subproblem call on the appropriate substring snippets.
+	  */
+
 	  static int dpLongestCommonSubsequence(String text1, String text2) {
 		  int n1=text1.length();
 		  int n2=text2.length();
@@ -26,14 +43,14 @@ public class LongestCommonSubsequenceLC1143 {
 			  }
 		  }
        
-		  System.out.println(Arrays.toString(A)+"d");                                                                                                                                                                                                                                                                                                                                              
+		  System.out.println(Arrays.deepToString(A));                                                                                                                                                                                                                                                                                                                                              
 		  
 		  return A[n1][n2];
 		  
 	  }
 	  
 	public static void main(String[] args) {
-	System.out.println(longestCommonSubsequence("acbdaf", "acbcf"));
+	System.out.println(dpLongestCommonSubsequence("acbdaf", "acbcf"));
 		
 	}
 }
