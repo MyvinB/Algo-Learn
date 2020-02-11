@@ -3,7 +3,7 @@ KISS :Keep It Simple Stupid
 
 #Problems To get back to \
 395
-https://github.com/ctfu/Leetcode/blob/master/algorithm/longestSubstringWithAtLeaseKRepeating.java /
+https://github.com/ctfu/Leetcode/blob/master/algorithm/longestSubstringWithAtLeaseKRepeating.java                                  
 #279. Perfect Squares
 https://leetcode.com/problems/perfect-squares/
 
