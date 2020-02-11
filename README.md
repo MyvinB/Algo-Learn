@@ -1,7 +1,6 @@
-# Algo-Learn
+## Algo-Learn
 KISS :Keep It Simple Stupid
-
-###### Problems To get back to \
+###### Problems To get back to
 [395](https://github.com/ctfu/Leetcode/blob/master/algorithm/longestSubstringWithAtLeaseKRepeating.java)                                  
 [279](https://leetcode.com/problems/perfect-squares/)
 ###### [DataStructure and Algorithm Guide](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide)
