@@ -5,7 +5,8 @@ public class MergeSortedLC21 {
 	        	l1=l1.next;
 	        	return l1;
 	    }
-	  ///Improved function where actually working with listnode and not creating new ListNode and storing in dummy variable just playing with pointers
+	  ///Improved function where actually working with listnode and not creating new ListNode and storing in dummy variable just
+	//playing with pointers
 	  ///Duration 1hr 30 min
 	static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		ListNode dummy=new ListNode(0);
