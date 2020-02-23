@@ -15,4 +15,8 @@ jobs:
         java-version: 1.8
     - name: No of Lines
       run: git ls-files | grep "\.java$" | wc -l
+    - name: Adding to read me
+      run: |
+        touch git ls-files | grep "\.java$" | wc -l > REAR.txt
+          
     
