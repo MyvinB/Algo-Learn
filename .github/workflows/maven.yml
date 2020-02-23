@@ -16,6 +16,8 @@ jobs:
         var=$(git ls-files | grep "\.java$" | wc -l) 
         git config --global user.email "myvinbarboza@gmail.com"
         git config --global user.name "MyvinB"
+        value=`cat Readme.md`
+        echo "$value" >> "${var}"
         echo "${var}" >> REAR.txt  
         git add REAR.txt
         git commit -m "adding count"
