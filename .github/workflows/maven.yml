@@ -15,7 +15,7 @@ jobs:
       run: |
         git config --global user.email "myvinbarboza@gmail.com"
         git config --global user.name "MyvinB"
-        git ls-files | grep "\.java$" | wc -l > REAR.txt        
+        git ls-files | grep "\.java$" | wc -l >> REAR.txt        
         git add REAR.txt
         git commit -m "adding count"
         git push -u origin master
