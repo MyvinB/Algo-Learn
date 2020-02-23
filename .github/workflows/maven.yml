@@ -14,5 +14,5 @@ jobs:
       with:
         java-version: 1.8
     - name: No of Lines
-      run: git ls-files | wc -l
+      run: git ls-files | grep "\.java$" | wc -l
     
