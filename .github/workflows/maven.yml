@@ -18,8 +18,9 @@ jobs:
         git config --global user.name "MyvinB"
         value=`cat README.md`
         c="${var} ${value}"
-        echo "${c}" >> REAR.txt  
-        git add REAR.txt
+        touch REAR.md
+        echo "${c}" >> REAR.md  
+        git add REAR.md
         git commit -m "adding count"
         git push -u origin master
           
