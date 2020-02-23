@@ -17,9 +17,9 @@ jobs:
         git config --global user.email "myvinbarboza@gmail.com"
         git config --global user.name "MyvinB"
         value=`cat README.md`
-        c="${var} ${value}"
-        touch REAR.md
-        echo "${c}" > REAR.md  
+        c="######TOTAL PROBLEMS:${var} ${value}"
+        touch README.md
+        echo "${c}" > README.md  
         git add REAR.md
         git commit -m "adding count"
         git push -u origin master
