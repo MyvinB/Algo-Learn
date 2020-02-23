@@ -1,4 +1,4 @@
-###### TOTAL PROBLEMS:65  ######TOTAL PROBLEMS:65 ## Algo-Learn
+65  ###### TOTAL PROBLEMS:65  ######TOTAL PROBLEMS:65 ## Algo-Learn
 KISS :Keep It Simple Stupid
 ###### Problems To get back to
 [395](https://github.com/ctfu/Leetcode/blob/master/algorithm/longestSubstringWithAtLeaseKRepeating.java)                                  
