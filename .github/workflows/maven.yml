@@ -1,0 +1,12 @@
+name: Java CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: No Of Lines
+      run: git ls-files | wc -l
