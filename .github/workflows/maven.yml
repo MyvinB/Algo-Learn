@@ -13,8 +13,6 @@ jobs:
       run: git ls-files | grep "\.java$" | wc -l
     - name: Adding to read me
       run: |
-        git config --global user.email "myvinbarboza@gmail.com"
-        git config --global user.name "MyvinB"
         git ls-files | grep "\.java$" | wc -l > REAR.txt        
         git add REAR.txt
         git commit -m "adding count"
