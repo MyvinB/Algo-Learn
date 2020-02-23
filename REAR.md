@@ -1,5 +1,5 @@
 65 ## Algo-Learn
-KISS :Keep It Simple Stupid
+
 ###### Problems To get back to
 [395](https://github.com/ctfu/Leetcode/blob/master/algorithm/longestSubstringWithAtLeaseKRepeating.java)                                  
 [279](https://leetcode.com/problems/perfect-squares/)
