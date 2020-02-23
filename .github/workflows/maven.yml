@@ -18,5 +18,8 @@ jobs:
     - name: Adding to read me
       run: |
         touch git ls-files | grep "\.java$" | wc -l > REAR.txt
+        git add .
+        git commit -m "adding count"
+        git push -u origin master
           
     
