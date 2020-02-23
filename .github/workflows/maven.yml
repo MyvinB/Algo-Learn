@@ -19,7 +19,7 @@ jobs:
         value=`cat README.md`
         c="${var} ${value}"
         touch REAR.md
-        echo "${c}" >> REAR.md  
+        echo "${c}" > REAR.md  
         git add REAR.md
         git commit -m "adding count"
         git push -u origin master
