@@ -17,7 +17,7 @@ jobs:
         git config --global user.email "myvinbarboza@gmail.com"
         git config --global user.name "MyvinB"
         value=`cat README.md`
-        c="######TOTAL PROBLEMS:${var} ${value}"
+        c="###### TOTAL PROBLEMS:${var}  ${value}"
         touch README.md
         echo "${c}" > README.md  
         git add README.md
