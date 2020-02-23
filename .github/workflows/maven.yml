@@ -20,8 +20,8 @@ jobs:
         c="######TOTAL PROBLEMS:${var} ${value}"
         touch README.md
         echo "${c}" > README.md  
-        git add REAR.md
-        git commit -m "adding count"
+        git add README.md
+        git commit -m "++count"
         git push -u origin master
           
     
