@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.Arrays;
 ///finding subarray problem the most efficient way is kadenge algo
 public class MaximumSubarrayLC38 {

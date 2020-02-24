@@ -1,4 +1,4 @@
-///https://www.youtube.com/watch?v=J9ikRMK8Yhs
+package Array;///https://www.youtube.com/watch?v=J9ikRMK8Yhs
 import java.util.HashMap;
 
 public class MinSwapToSortAnArray {

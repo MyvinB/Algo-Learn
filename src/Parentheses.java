@@ -27,6 +27,6 @@ public class Parentheses {
 
     public static void main(String[] args) {
         Parentheses a=new Parentheses();
-        System.out.println(a.isValid("}");
+        System.out.println(a.isValid("}"));
     }
 }

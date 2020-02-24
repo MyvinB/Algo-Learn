@@ -1,3 +1,5 @@
+package LinkedList;
+
 /*Given a sorted linked list, delete all duplicates such that each element appear only once.
 
 Example 1:
@@ -8,9 +10,11 @@ Example 2:
 
 Input: 1->1->2->3->3
 Output: 1->2->3*/
+
 public class RemoveDuplicatesLC83 {
+
 	 static ListNode deleteDuplicates(ListNode head) {
-	        if(head==null)return head;
+	        if(head==null)return null;
 		 ListNode current =head;
 	        ListNode forward=head.next;
 

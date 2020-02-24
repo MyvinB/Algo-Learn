@@ -1,3 +1,6 @@
+package LinkedList;
+
+import LinkedList.ListNode;
 
 public class MergeSortedLC21andLC23{
 	  static ListNode setNodes(ListNode l1,int val){

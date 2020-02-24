@@ -1,4 +1,4 @@
-/*Given a singly linked list, determine if it is a palindrome.
+package LinkedList;/*Given a singly linked list, determine if it is a palindrome.
 
 Example 1:
 
@@ -11,11 +11,7 @@ Output: true*/
 
 import java.util.Stack;
 
-class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
-  }
+
 
 
 

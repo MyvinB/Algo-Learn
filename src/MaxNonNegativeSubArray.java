@@ -19,7 +19,7 @@ Output 2:
 Explanation 2:
     The three sub-arrays are [10], [2, 3], [100].
     The answer is [100] as its sum is larger than the other two.*/
-public class CS1 {
+public class MaxNonNegativeSubArray {
     public static void main(String[] args) {
         long max= Integer.MIN_VALUE;
         int[] A=//{1, 2, 5, -7, 2, 3};

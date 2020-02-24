@@ -1,3 +1,7 @@
+package LinkedList;
+
+import LinkedList.ListNode;
+
 /*Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
 
 Example 1:
@@ -8,7 +12,7 @@ Example 2:
 
 Input: 1->1->1->2->3
 Output: 2->3*/
-public class RemoveDuplicatesfromSortedListIILC82 {
+public class RemoveDuplicatesFromSortedListIILC82 {
 	  	
 	
 	

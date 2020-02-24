@@ -1,3 +1,5 @@
+package LinkedList;
+
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -16,7 +18,7 @@ Input: head = [3,2,0,-4], pos = 1
 Output: true
 Explanation: There is a cycle in the linked list, where tail connects to the second node.
  */
-public class Solution {
+public class LinkedListCycleLC141 {
     public boolean hasCycle(ListNode head) {
         ListNode fast=head;
         ListNode slow=head;
@@ -27,4 +29,5 @@ public class Solution {
         }
         return false;
     }
+
 }

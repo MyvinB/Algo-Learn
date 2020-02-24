@@ -1,6 +1,9 @@
+package LinkedList;
+
+import LinkedList.ListNode;
 
 public class RotateLinkedListLC61 {
-	  static ListNode setNodes(ListNode l1,int val){
+	  static ListNode setNodes(ListNode l1, int val){
       	l1.next=new ListNode(val);
       	l1=l1.next;
       	return l1;
