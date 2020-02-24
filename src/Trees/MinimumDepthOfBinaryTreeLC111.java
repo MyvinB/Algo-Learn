@@ -1,6 +1,6 @@
 package Trees;
 
-public class MinimumDepthofBinaryTreeLC111 {
+public class MinimumDepthOfBinaryTreeLC111 {
 
     static int minDepth(Node root) {
         if(root==null)return 0;
