@@ -13,7 +13,7 @@ public class ThreeSumLC15 {
 		   }
 		   Arrays.sort(nums);
 		   for (int i = 0; i < nums.length-2; i++) {
-				if(i>0&&nums[i]!=nums[i-1]){
+				if(i==0||i>0&&nums[i]!=nums[i-1]){
 					int low=i+1;
 					int high=nums.length-1;
 					int sum=0-nums[i];
@@ -43,7 +43,7 @@ public class ThreeSumLC15 {
 		
 		
 		public static void main(String[] args) {
-				int[] p={-1, 0, 1, 2, -1, -4};
+				int[] p={-2,0,0,2,2};
 				System.out.println(threeSum(p));
 		}
 }
