@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Arrays;
 ///finding subarray problem the most efficient way is kadenge algo
-public class MaximumSubarrayLC38 {
+public class MaximumSubarrayLC53 {
 	
 	///n2 complexity of finding subarray 
 	static int[] subArray(int[] A){
@@ -79,8 +79,9 @@ public class MaximumSubarrayLC38 {
 	public static void main(String[] args) {
 	int A[]={-1,-1,-1};
 	int p[]={-2,4};
-	System.out.println(Arrays.toString(subArray(A)));
+	int e[]={-2,1,-3,4,-1,2,1,-5,4};
+	//System.out.println(Arrays.toString(subArray(A)));
 	System.out.println(maxSubArray(A, 0, A.length-1)+"anss");
-	System.out.println(maxSubKadane(A));
+	//System.out.println(maxSubKadane());
 	}
 }
