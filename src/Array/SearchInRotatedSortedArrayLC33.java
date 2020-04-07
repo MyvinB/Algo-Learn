@@ -1,4 +1,4 @@
-package Searching;
+package Array;
 
 /*
  @author Myvin Barboza
