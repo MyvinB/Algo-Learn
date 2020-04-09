@@ -2,6 +2,8 @@ package LinkedList;
 
 import LinkedList.ListNode;
 
+import java.util.Arrays;
+
 public class MergeSortedLC21andLC23{
 	  static ListNode setNodes(ListNode l1,int val){
 	        	l1.next=new ListNode(val);
@@ -32,22 +34,19 @@ public class MergeSortedLC21andLC23{
 		return head.next;
 	
 	}
-	
+
 	static ListNode mergeKLists(ListNode[] lists) {
-		ListNode temp=null;
-        if(lists.length==0)return null;
-        if(lists.length==1)return lists[0];
-        ListNode l3=mergeTwoLists(lists[0],lists[1]);
-        temp=l3;
-		while(temp!=null){
-			System.out.print(temp.val+"->");
-			temp=temp.next;
+		if(lists.length==0)return null;
+		if(lists.length==1)return lists[0];
+		if(lists.length==2)return mergeTwoLists(lists[0],lists[1]);
+		else{
+			int mid=lists.length/2;
+			ListNode firsthalf=mergeKLists(Arrays.copyOfRange(lists,0,mid));
+			ListNode secondhalf=mergeKLists(Arrays.copyOfRange(lists,mid,lists.length));
+			return  mergeTwoLists(firsthalf,secondhalf);
 		}
-        for(int i=2;i<lists.length;i++){
-            l3=mergeTwoLists(lists[i],l3);
-        }
-        return l3;
-    }
+
+	}
 		public static void main(String[] args) {
 			ListNode l1=new ListNode(0);
 			ListNode head1=l1;
