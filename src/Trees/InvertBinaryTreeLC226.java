@@ -1,5 +1,7 @@
 package Trees;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /*
@@ -14,6 +16,23 @@ public class InvertBinaryTreeLC226 {
     n.left=invertTree(root.right);
             n.right=invertTree(root.left);
             return n;
+    }
+
+
+    static TreeNode invertTreeIterative(TreeNode root) {
+        Queue<TreeNode> que=new LinkedList<>();
+        que.add(root);
+        while(!que.isEmpty()){
+            TreeNode n=que.poll();
+            if(n!=null){
+                que.add(n.left);
+                que.add(n.right);
+                TreeNode temp=n.left;
+                n.left=n.right;
+                n.right=temp;
+            }
+        }
+        return root;
     }
 
 
