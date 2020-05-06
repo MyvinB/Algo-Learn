@@ -1,4 +1,4 @@
-/*
+package String;/*
  @author Myvin Barboza
  31/03/20 7:38 PM 
  */
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Rahul {
+public class longestPalindromeSubStringUnordered {
 
     static String longestPalindrome(String str)
     {
