@@ -1,91 +1,41 @@
 package CodeForce.B;
 /*
  @author Myvin Barboza
- 11/05/20 8:35 AM
- Help:https://www.youtube.com/watch?v=-cSd-SwOCxQ
+ 11/05/20 9:57 AM 
  */
+
+import org.omg.PortableInterceptor.INACTIVE;
 
 import java.io.*;
 import java.util.*;
+public class Square1351 {
 
-public class SameParitySummands135 {
             /************************ SOLUTION STARTS HERE ***********************/
-            static void  YouTubeWay(int n,int k){
-                int div=n/k;
-                int rem=n%k;
 
-                if(n<k){
-                    System.out.println("NO");
 
-                }
-                else if(rem==0){
-                    System.out.println("Yes");
-                    for (int i = 1; i <=k ; i++) {
-                        System.out.print(div+" ");
-                    }
-                    System.out.println();
-                }
-                else if(div%2==0 && (div+rem)%2==0){
-                    System.out.println("Yes");
-                    for (int i = 1; i <=k-1 ; i++) {
-                        System.out.print(div+" ");
-                    };System.out.print(div+rem);
-                    System.out.println();
-                }else if(div%2!=0 && (div+rem)%2!=0){
-                    System.out.println("Yes");
-                    for (int i = 1; i <=k-1 ; i++) {
-                        System.out.print(div+" ");
-                    };System.out.print(div+rem);
-                    System.out.println();
-                }
-                else if((k-1)%2!=0){
-                    System.out.println("NO");
-                }
-                else if(div==1){
-                    System.out.println("NO");
-                }
-                else{
-                    System.out.println("Yes");
-                    for (int i = 1; i <=k/2 ; i++) {
-                        System.out.print((div+1)+" "+(div-1)+" ");
-                    }System.out.print(div+rem);
-                    System.out.println();
 
-                }
-            }
+                    private static void solve(FastScanner s1, PrintWriter out){
 
-            static void Editorial(int n, int k){
-                int n1=n-(k-1);
-                int n2=n-2*(k-1);
-                if(n1>0 && n1%2==1){
-                    System.out.println("YES");
-                    for (int i = 1; i <=k-1 ; i++) {
-                        System.out.print("1" + " ");
-                    }System.out.println(n1);
-                }
-                else if(n2>0 && n2%2==0){
-                    System.out.println("YES");
-                    for (int i = 1; i <=k-1 ; i++) {
-                        System.out.print("2" + " ");
-                    }System.out.println(n2);
-                }
-                else{
-                    System.out.println("NO");
-                }
-            }
-
-            private static void solve(FastScanner s1, PrintWriter out){
                         int t=s1.nextInt();
                         while(t--!=0){
-                            int n=s1.nextInt();
-                            int k=s1.nextInt();
-                          //  YouTubeWay(n,k);
-                            Editorial(n,k);
+                        int a1=s1.nextInt();
+                        int b1=s1.nextInt();
+                        int max1=Math.max(a1,b1);
+                        int min1=Math.min(a1,b1);
+
+                        int a2=s1.nextInt();
+                        int b2=s1.nextInt();
+                        int max2=Math.max(a2,b2);
+                        int min2=Math.min(a2,b2);
+
+
+
+                        if(max1==max2 && max1==min1+min2)
+                            System.out.println("YES");
+                        else
+                            System.out.println("NO");
 
                         }
-
-
-
                     }
 
                     /************************ SOLUTION ENDS HERE ************************/
