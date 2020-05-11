@@ -1,27 +1,63 @@
-package CodeForce;
+package CodeForce.B;
+/*
+ @author Myvin Barboza
+ 11/05/20 8:35 AM
+ Help:https://www.youtube.com/watch?v=-cSd-SwOCxQ
+ */
 
 import java.io.*;
 import java.util.*;
-/*
- @author Myvin Barboza
- 10/05/20 5:31 PM 
- */
 
-public class A158NextRound {
+public class SameParitySummands135 {
             /************************ SOLUTION STARTS HERE ***********************/
                     private static void solve(FastScanner s1, PrintWriter out){
-                    int n=s1.nextInt();
-                    int k=s1.nextInt();
-                    int arr[]=s1.nextIntArrayOneBased(n);
-                            for (int i = 1; i <=k ; i++) {
-                                    if(arr[i]==0){
-                                            System.out.println(i-1);
-                                            System.exit(0);
-                                    }
-                            }
-while(k+1<arr.length && arr[k]==arr[k+1])k++;
- System.out.println(k);
+                        int t=s1.nextInt();
+                        while(t--!=0){
+                            int n=s1.nextInt();
+                            int k=s1.nextInt();
 
+                            int div=n/k;
+                            int rem=n%k;
+
+                            if(n<k){
+                                System.out.println("NO");
+
+                            }
+                            else if(rem==0){
+                                System.out.println("Yes");
+                                for (int i = 1; i <=k ; i++) {
+                                    System.out.print(div+" ");
+                                }
+                                System.out.println();
+                            }
+                            else if(div%2==0 && (div+rem)%2==0){
+                                System.out.println("Yes");
+                                for (int i = 1; i <=k-1 ; i++) {
+                                    System.out.print(div+" ");
+                                };System.out.print(div+rem);
+                                System.out.println();
+                            }else if(div%2!=0 && (div+rem)%2!=0){
+                                System.out.println("Yes");
+                                for (int i = 1; i <=k-1 ; i++) {
+                                    System.out.print(div+" ");
+                                };System.out.print(div+rem);
+                                System.out.println();
+                            }
+                            else if((k-1)%2!=0){
+                                System.out.println("NO");
+                            }
+                            else if(div==1){
+                                System.out.println("NO");
+                            }
+                            else{
+                                System.out.println("Yes");
+                                for (int i = 1; i <=k/2 ; i++) {
+                                    System.out.print((div+1)+" "+(div-1)+" ");
+                                }System.out.print(div+rem);
+                                System.out.println();
+
+                            }
+                        }
 
 
 

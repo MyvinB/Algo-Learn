@@ -1,4 +1,4 @@
-package CodeForce;
+package CodeForce.A;
 /*
  @author Myvin Barboza
  10/05/20 6:04 PM 
