@@ -1,11 +1,69 @@
-/*
+package CodeForce.C;/*
  @author Myvin Barboza
  13/05/20 10:24 AM 
  */
 import java.util.*;
 import java.io.*;
 
-public class OracAndModels1350NULL {
+public class OracAndModels1350 {
+
+
+
+    static int iterativeDP(int a[],int n){
+        int dp[]=new int[n+1];
+        Arrays.fill(dp,1);
+        int ans=1;
+        int max=0;
+
+        for (int i = 2; i <=n ; i++) {
+            max=0;
+            for (int j = 1; j*j <=i ; j++)
+                if(i%j==0){
+                    int m1=j;
+                    int m2=i/j;
+
+                    if(a[m1]<a[i]){
+                        max=Math.max(max,dp[m1]);
+                    }
+                    if(a[m2]<a[i]){
+                        max=Math.max(max,dp[m2]);
+                    }
+
+
+
+                }
+            dp[i]=dp[i]+max;
+
+            ans=Math.max(dp[i],ans);
+
+        }
+        return ans;
+    }
+
+
+    static int recurDPFun(int index,int n,int a[],int dp[]){
+
+        if(index>n) return 0;
+        if(dp[index]!=-1) return dp[index];
+        int count=0;
+        for (int i = index; i <=n ; i=i+index) {
+            if(a[i]>a[index]){
+                count=Math.max(count,1+recurDPFun(i,n,a,dp));
+            }
+        }
+        return dp[index]=count;
+
+    }
+
+    static int recur(int n,int a[]){
+        int dp[]=new int[n+1];
+        Arrays.fill(dp,-1);
+        int ans=1;
+        for (int i = 1; i <=n; i++) {
+            ans=Math.max(ans,1+recurDPFun(i,n,a,dp));
+        }
+        return ans;
+    }
 
          /************************ SOLUTION STARTS HERE ***********************/
                  private static void solve(FastScanner s1, PrintWriter out){
@@ -13,34 +71,8 @@ public class OracAndModels1350NULL {
                      while(t--!=0){
                          int n=s1.nextInt();
                          int a[]=s1.nextIntArrayOneBased(n);
-                         int dp[]=new int[n+1];
-                         Arrays.fill(dp,1);
-                         int ans=1;
-                         int max=0;
-
-                         for (int i = 2; i <=n ; i++) {
-                             for (int j = 1; j*j <=i ; j++) {
-                                 if(i%j==0){
-                                     int m1=j;
-                                     int m2=i/j;
-
-//                                     if(a[m1]<a[i]){
-//                                         max=Math.max(max,dp[m1]);
-//                                     }
-//                                     if(a[m1]<a[i]){
-//                                         max=Math.max(max,dp[m2]);
-//                                     }
-
-                                     
-
-                                 }
-                             }
-                             dp[i]=dp[i]+max;
-                             System.out.println(Arrays.toString(dp));
-                         }
-
-
-
+                         System.out.println(iterativeDP(a,n));
+                         //System.out.println(recur(n,a));
 
 
                      }
