@@ -11,56 +11,66 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Placement {
 
             /************************ SOLUTION STARTS HERE ***********************/
-            static String printInLine(HashMap<String,String> map,String s, long multi){
+            static String printInLine(HashMap<String,String> map,String s, double multi){
                     if(!map.containsKey(s)) return multi+" "+s;
                     String val[]=map.get(s).split(" ");
-                    long val1=Long.parseLong(val[0]);
+                    double val1=Double.parseDouble(val[0]);
 
                     return printInLine(map,val[1],multi*val1);
             }
 
-            static void modularise(HashMap<String,String> map,String type){
 
-            }
 
             private static void solve(FastScanner s1, PrintWriter out){
                         String s=s1.nextLine();
                         String sArr[]=s.split(",");
                         HashMap<String,String> map = new HashMap<String,String>();
-                        HashMap<Long,String> mapChange=new HashMap<>();
-                        TreeMap<Long,String> mapOrdered=new TreeMap<>();
+                        HashMap<Double,String> mapChange=new HashMap<>();
+                        TreeMap<Double,String> mapOrdered=new TreeMap<>();
                         String lastVal="";
-                        long max=Long.MIN_VALUE;
+                        double max=Double.MIN_VALUE;
                         for (int i = 0; i <sArr.length-1 ; i++) {
                                     String sKeyValue=s1.nextLine();
                                     String sArr1[]=sKeyValue  .split(" = ");
-                                    String check[]=sArr1[1].split(" ");
-                                //    countMap.put(check[1],1+countMap.getOrDefault(check[1],0));
                                     map.put(sArr1[0],sArr1[1]);
                         }
-                        System.out.println(map);
+                      //  System.out.println(map);
                         for(String key:map.keySet()){
                                 String val[]=map.get(key).split(" ");
-                                String newVal=printInLine(map,val[1],  Long.parseLong(val[0]));
-                               // System.out.println(newVal);
+                                String newVal=printInLine(map,val[1],  Double.parseDouble(val[0]));
+                              // System.out.println(newVal);
                                 String val1[]=newVal.split(" ");
                                 lastVal=val1[1];
-                                max=Math.max(max,Long.parseLong(val1[0]));
-                                mapChange.put(Long.parseLong(val1[0]),key);
+                                max=Math.max(max,Double.parseDouble(val1[0]));
+                                mapChange.put(Double.parseDouble(val1[0]),key);
                         }
-                   System.out.println(max);
+//                   System.out.println(max);
                     System.out.println(mapChange);
-                        for(long key:mapChange.keySet()){
+                        for(double key:mapChange.keySet()){
                                 String val=mapChange.get(key);
-                                long changedVal=max/key;
+                                double changedVal=max/key;
                                 mapOrdered.put(changedVal,val);
                         }
-                    //System.out.println(mapOrdered);
+                    System.out.println(mapOrdered);
 
-                    for (long key:mapOrdered.keySet()){
-                            System.out.print(key+""+mapOrdered.get(key)+" = ");
+                    for (double key:mapOrdered.keySet()){
+
+                            if((long)key==key){
+
+
+                                System.out.print((long)key+""+mapOrdered.get(key)+" = ");
+                            }else {
+
+                                System.out.print(key + "" + mapOrdered.get(key) + " = ");
+                            }
                     }
-                    System.out.print(max+lastVal);
+                if((long)max==max){
+
+                    System.out.print((long)max+lastVal);
+                }else {
+                    System.out.print((long)max+lastVal);
+                }
+
 
 
 
