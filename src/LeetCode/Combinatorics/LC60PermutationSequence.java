@@ -12,6 +12,7 @@ public class LC60PermutationSequence {
     static String getPermutation(int n, int k) {
         List<Integer> num=new LinkedList<>();
         //making it a one based index
+        num.add(0);
         int fact[]=new int[n];
         fact[0]=1;
         for (int i = 1; i <n ; i++) {
@@ -21,10 +22,11 @@ public class LC60PermutationSequence {
         //dont really require the last fact say 1234 we cal 3! at start
         num.add(n);
         //Account that k is starting from zero
-        k--;
+        //k--;
         // starting from zero index so even while calculating indx
         // in this way we are taking one less always 13% 6 giving us  and indx=2  k=1 will give us the right permutation index
         //instead of 14%6 giving us index2 but then then k =1 wont give it
+        k++;
         StringBuilder sb=new StringBuilder();
         for(int i=n;i>0;i--){
             int index=k/fact[i-1];
