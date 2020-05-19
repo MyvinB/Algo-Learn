@@ -10,8 +10,18 @@ package LeetCode.LinkedList;
         ListNode current=head;
         ListNode prev=null;
         ListNode next=null;
+        /*
+        1 2 3 4
+        next =2
+        1.next=null
+        prev=1
+        current=2
+        next=3
+        2.next=1(prev)
 
+        */
         while(current!=null){
+
             next=current.next;
             current.next=prev;
             prev=current;

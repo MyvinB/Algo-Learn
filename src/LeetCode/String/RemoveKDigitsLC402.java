@@ -19,7 +19,7 @@ public class RemoveKDigitsLC402 {
         StringBuilder sb=new StringBuilder();
         int index=num.length()-1;
        for(int i=0;i<num.length()-1;i++){
-           if(num.charAt(i)>num.charAt(i+1)){
+           if(num.charAt(i)<num.charAt(i+1)){
                //the index we don't want to include in the substring
                index=i;
                break;
@@ -27,6 +27,7 @@ public class RemoveKDigitsLC402 {
        }
 
        for(int i=0;i<num.length();i++){
+           //if first digit is zero and length == zero
            if(sb.length()==0 && num.charAt(i)=='0' || i==index){
                continue;
            }
