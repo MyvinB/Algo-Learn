@@ -31,13 +31,14 @@ public class LC300LongestIncreasingSubsequence {
         int len=0;
         for(int num:nums){
             int index= Arrays.binarySearch(dp,0,len,num);
+
             if(index<0){
                 index=-(index+1);
             }
 
             dp[index]=num;
             if(index==len){
-                len++;
+                 len++;
             }
         }
         return len;
