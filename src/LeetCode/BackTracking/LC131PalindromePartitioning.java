@@ -39,9 +39,10 @@ public class LC131PalindromePartitioning {
         return true;
     }
 
-
+//no string and the complete string is considered as one palindrome
     public static void main(String[] args) {
-        String s="aab";
+        String s="aabaa";
+      ///  System.out.println(isPalindrome(0,4,"aabaa"));
         System.out.println(partition(s));
     }
 }

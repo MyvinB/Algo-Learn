@@ -14,3 +14,13 @@ KISS :Keep It Simple Stupid
 
 ### Spring  
 https://www.edureka.co/blog/interview-questions/spring-interview-questions/
+
+
+### CODE->to be understood
+src/LeetCode/DP/LC132PalindromePartitioningII
+
+### COMMANDS
+To clear your entire Git cache, use the “git rm” command with the “-r” option for recursive.
+```
+$ git rm -r --cached .
+```
