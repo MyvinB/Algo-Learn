@@ -11,6 +11,7 @@ KISS :Keep It Simple Stupid
 [Amazon Interview Problems:](https://leetcode.com/discuss/interview-question/481968/Amazon-Interview-Problems-List-(Updated)/430085)|| [Patterns for Dp:](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns)                                  
 
 ### Interview Preparation Links  
+h
 
 ### Spring  
 https://www.edureka.co/blog/interview-questions/spring-interview-questions/
