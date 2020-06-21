@@ -1,4 +1,4 @@
-package LeetCode;/*
+package LeetCode.DP;/*
  @author Myvin Barboza
  17/06/20 4:13 PM
  help:tushar roy

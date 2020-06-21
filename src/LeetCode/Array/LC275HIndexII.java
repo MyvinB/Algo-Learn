@@ -33,12 +33,12 @@ else if(a[mid]>n-mid)right=mid-1;
         return n-left;
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) {    
             // 4 no of papers having 4 sitations
         //we are finding the square
 
         // 0 1 4
-        int a[] = {0, 1,2,3, 5, 6,7,8};
+        int a[] = {0, 1,2};
 
         System.out.println(hIndex(a));
 
