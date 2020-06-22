@@ -1,16 +1,9 @@
-package CopiedCode;/*
+package LeetCode.BitWiseAlgo;/*
  @author Myvin Barboza
- 21/06/20 3:56 PM 
+ 22/06/20 6:26 PM 
  */
 
-import java.sql.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-public class Solution {
-
+public class LC137SingleNumberII {
     public static void main(String[] args) {
         int a[] = {1, 2, 2, 1, 1, 7, 2 };
         System.out.println();
@@ -32,15 +25,13 @@ public class Solution {
   Index form 0 to 6.....====>>>>>>
          */
         for (int i = 0; i <a.length ; i++) {
-           // System.out.println(cho);
+            // System.out.println(cho);
             ones = (ones^a[i])&~twos;
             twos = (twos^a[i])&~ones;
 
         }
         return ones;
     }
-
-
 
 
 }
