@@ -32,8 +32,7 @@ public class LC441ArrangingCoins {
         }
         else high=mid-1;
     }
-    //closest to the value required -1 as the before row is complete
-    return (int) low-1;
+    return (int) high;
     }
 
     //formula based to get the value x
