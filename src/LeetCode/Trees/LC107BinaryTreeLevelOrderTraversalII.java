@@ -55,6 +55,7 @@ public class LC107BinaryTreeLevelOrderTraversalII {
 
         if(root==null) return;
         if(level==list.size()){
+            //keeps going down
             list.add(0,new LinkedList<Integer>());
         }
 
