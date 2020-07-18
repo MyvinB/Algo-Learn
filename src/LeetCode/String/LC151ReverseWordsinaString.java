@@ -22,5 +22,22 @@ public class LC151ReverseWordsinaString {
 
         return sb1.toString();
     }
+        //better
+    public String reverseWordsO(String s) {
+        s=s.trim();
+        StringBuilder sb=new StringBuilder();
+        int j=s.length()-1;
+
+        while(j>=0){
+            if(s.charAt(j)==' ') { j--; continue;}
+
+            int i=s.lastIndexOf(' ',j);
+            sb.append(s.substring(i+1,j+1));
+            j=i-1;
+            if(i!=-1)
+                sb.append(' ');
+        }
+        return sb.toString();
+    }
 
 }
