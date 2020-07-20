@@ -45,6 +45,7 @@ public class LC210CourseScheduleII {
             }
 
         }
+        //this is just a boolean check for LC207
         return t==numCourses? ans:new int[0];
 
 
