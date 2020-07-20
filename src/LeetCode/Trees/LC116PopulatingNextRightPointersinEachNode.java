@@ -9,27 +9,9 @@ import java.util.Queue;
 
 public class LC116PopulatingNextRightPointersinEachNode {
 
-    class Node {
-        public int val;
-        public LeetCode.Trees.Node left;
-        public LeetCode.Trees.Node right;
-        public LeetCode.Trees.Node next;
 
-        public Node() {}
-
-        public Node(int _val) {
-            val = _val;
-        }
-
-        public Node(int _val, LeetCode.Trees.Node _left, LeetCode.Trees.Node _right, LeetCode.Trees.Node _next) {
-            val = _val;
-            left = _left;
-            right = _right;
-            next = _next;
-        }
-    }
-        //okay but specifically said constant space
-    public Node connectNO(Node root) {
+        //okay but specifically said constant space men
+    public Node connect(Node root) {
         if(root==null) return root;
         Queue<Node> queue=new LinkedList<>();
         queue.offer(root);
@@ -46,8 +28,8 @@ public class LC116PopulatingNextRightPointersinEachNode {
         }
         return root;
     }
-        /// 100 % faster constant space
-    public Node connect(Node root) {
+
+    public Node connectN(Node root) {
         // if(root==null) return;
         //left most node of each level
         Node curLevel=root;
