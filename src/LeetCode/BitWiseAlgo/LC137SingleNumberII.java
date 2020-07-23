@@ -5,8 +5,8 @@ package LeetCode.BitWiseAlgo;/*
 
 public class LC137SingleNumberII {
     public static void main(String[] args) {
-        int a[] = {1, 2, 2, 1, 1, 7, 2 };
-        System.out.println();
+        int a[] = {1,2,2,1,1,7,2 };
+
         System.out.println(singleNumber(a));
     }
 
