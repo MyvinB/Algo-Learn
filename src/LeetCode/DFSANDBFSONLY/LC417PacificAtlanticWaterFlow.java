@@ -1,4 +1,4 @@
-package LeetCode.DP;/*
+package LeetCode.DFSANDBFSONLY;/*
  @author Myvin Barboza
  22/07/20 8:38 AM
  help:https://leetcode.com/problems/pacific-atlantic-water-flow/discuss/90733/Java-BFS-and-DFS-from-Ocean
