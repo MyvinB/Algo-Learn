@@ -27,6 +27,7 @@ public class LC33SearchinRotatedSortedArray {
         right=a.length-1;
         if(target>a[a.length-1])right=start;
         else left=start;
+        //becareful of the repetion happens if two are there
         while(left<right){
             int mid=left+(right-left)/2;
             if(a[mid]<target)left=mid+1;
