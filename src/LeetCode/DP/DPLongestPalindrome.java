@@ -18,7 +18,6 @@ public class DPLongestPalindrome {
 			for(int i=0;i<=n-k;i++){
 				int j=i+k-1;
 				//for two characters
-				
 				if(str.charAt(i)==str.charAt(j)&&k==2){
 					A[i][j]=true;
 					if(k>max){
@@ -27,14 +26,11 @@ public class DPLongestPalindrome {
 					}
 				}
 				else if(str.charAt(i)==str.charAt(j)&&A[i+1][j-1]){
-				
-					
 					A[i][j]=true;
 					if(k>max){
 						start=i;
 						max=k;
 					}
-				
 				}
 				else{
 					A[i][j]=false;
@@ -46,7 +42,7 @@ public class DPLongestPalindrome {
 	
 	
 	public static void main(String[] args) {
-	String str="abaabc";
+	String str="bbbab";
 	System.out.println(longestPalindrome(str));
 	
 
