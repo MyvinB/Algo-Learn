@@ -18,12 +18,13 @@ public class LC621TaskScheduler {
                maxCount=1;
            }
        }
-
+      //  int total=(n+1)*(max-1)+maxCount;   return total>tasks.length?total:tasks.length;
        int partCount=max-1;
        int partLength=n-(maxCount-1);
        int empty=partCount*partLength;
        int availableTask= tasks.length-max*maxCount;
        int idle=Math.max(0,empty-availableTask);
+
        return tasks.length+idle;
     }
 
