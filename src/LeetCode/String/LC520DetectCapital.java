@@ -8,6 +8,7 @@ public class LC520DetectCapital {
 
     }
     public boolean detectCapitalUse(String word) {
+        // regex real simple   return word.matches("[A-Z]*|.[a-z]*");
         int n=word.length();
         if(n==1)
             return true;
