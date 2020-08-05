@@ -3,7 +3,10 @@ package Challenge;/*
  01/08/20 5:16 PM 
  */
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Stack;
 
 public class TH2 {
 
@@ -17,6 +20,7 @@ public class TH2 {
         for(int i=0;i<8;i++){
                 System.out.println(Arrays.toString(ar[i]));
         }
+
     }
 
 }
