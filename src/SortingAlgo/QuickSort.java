@@ -8,7 +8,9 @@ import java.util.Arrays;
 public class QuickSort {
     public static void main(String[] args) {
     int a[]={10,16,8,12,15,6,3,9,5};
+    int p[]={7,6,5,4,3,2,1};
 
+        System.out.println(Arrays.toString(p));
     quickSort(0,a.length-1,a);
 
         System.out.println(Arrays.toString(a));
@@ -16,30 +18,16 @@ public class QuickSort {
 
   static  void quickSort(int l,int h,int a[]){
         if(l<h){
-            int j=partion(l,h,a);
+            int j=partition(l,h,a);
             quickSort(l,j-1,a);
             quickSort(j+1,h,a);
         }
 
 
     }
+    //2,1
 
-    static int partion(int l,int h,int a[]){
-        int pivot=a[l];
-        int i=l+1,j=h;
-        boolean flag=false;
-        while(i<j){
-           while(a[i]<=pivot)i++;
-           while(a[j]>pivot)j--;
-           if(i<j){
-            swap(i,j,a);
-           }
-           flag=true;
-        }
-        if(flag)
-        swap(l,j,a);
-        return j;
-    }
+
 
     static int partition( int low, int high,int arr[])
     {
@@ -52,18 +40,13 @@ public class QuickSort {
             if (arr[j] <= pivot)
             {
                 i++;
-
                 // swap arr[i] and arr[j]
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+                swap(i,j,arr);
             }
         }
 
         // swap arr[i+1] and arr[high] (or pivot)
-        int temp = arr[i+1];
-        arr[i+1] = arr[high];
-        arr[high] = temp;
+       swap(i+1,high,arr);
 
         return i+1;
     }
