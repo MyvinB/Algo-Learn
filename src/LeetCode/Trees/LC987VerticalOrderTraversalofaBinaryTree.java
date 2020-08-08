@@ -12,9 +12,9 @@ public class LC987VerticalOrderTraversalofaBinaryTree {
     public static void main(String[] args) {
 
     }
-    //we don not require a priority que as use a list we have to pop all elemnts out so nlong
-    //instead of using log n time sorting all the time obviously time is the same but I thought this woudl be better
-    //
+    //we don not require a priority que as use a list we have to pop all elemnts out so nlong time only
+    //instead of using log n time sorting all the time obviously time is the same but I thought this would  be better
+    //using a one time sort
 
 
       class Info{
