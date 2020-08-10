@@ -9,7 +9,7 @@ package Challenge;
 import java.util.*;
  import java.io.*;
 
-public class A {
+public class    A {
 
             /************************ SOLUTION STARTS HERE ***********************/
 
