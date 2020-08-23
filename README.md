@@ -25,3 +25,13 @@ To clear your entire Git cache, use the “git rm” command with the “-r” o
 ```
 $ git rm -r --cached .
 ```
+### Sql questions asked
+max N salary 
+
+select id,salary from emplpoyee e1 where N-1=(select count(DISTINCT salary) from employee e2 where e2.salary>e1.salary); 
+->Now this query will be slower because it is querying the entire table if asked for 1st highest 
+1st highest
+select MAX(salary) from employee;
+2nd highest
+select salary from employee where salary Not In (select MAX(salary) from employee);
+
