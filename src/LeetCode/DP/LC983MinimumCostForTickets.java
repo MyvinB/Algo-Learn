@@ -83,9 +83,9 @@ min=11
 
 
         int[] memo = new int[days.length];
-        mincostTickets(0,days, costs, memo);
-        System.out.println(Arrays.toString(memo));
-        return 4;
+        return mincostTickets(0,days, costs, memo);
+       // System.out.println(Arrays.toString(memo));
+
     }
 
     private static int mincostTickets(int daysIndex,int[]days,int costs[],int memo[]) {
@@ -96,14 +96,14 @@ min=11
         }
 
         int totalCostDay=costs[0]+mincostTickets(getNextDay(daysIndex,days,1),days,costs,memo);
-        System.out.print(totalCostDay +"D ");
+      // System.out.print(totalCostDay +"D ");
 
         int totalCostWeek=costs[1]+mincostTickets(getNextDay(daysIndex,days,7),days,costs,memo);
-        System.out.print(totalCostWeek+"W ");
+       // System.out.print(totalCostWeek+"W ");
         int totalCostMonth=costs[2]+mincostTickets(getNextDay(daysIndex,days,30),days,costs,memo);
-        System.out.print(totalCostMonth+"M ");
+       // System.out.print(totalCostMonth+"M ");
         memo[daysIndex]=Math.min(totalCostDay,Math.min(totalCostMonth,totalCostWeek));
-        System.out.println("");
+       // System.out.println("");
         return memo[daysIndex];
 
     }
