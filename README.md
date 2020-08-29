@@ -5,7 +5,7 @@
 KISS :Keep It Simple Stupid
 
 ###### Problems To get back to
-bah bah bah        
+        
 
 ###### Helpful Links to get by 
 [DataStructure and Algorithm Guide](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide)||
@@ -22,9 +22,11 @@ https://www.edureka.co/blog/interview-questions/spring-interview-questions/
 src/LeetCode/DP/LC132PalindromePartitioningII
 
 ### COMMANDS
-To clear your entire Git cache, use the “git rm” command with the “-r” option for recursive.
 ```
+//To clear your entire Git cache, use the “git rm” command with the “-r” option for recursive.
 $ git rm -r --cached .
+//to help git store your creditionals for your repo
+$ git config credential.helper store 
 ```
 ### Sql questions asked
 max N salary 
