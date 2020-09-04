@@ -20,7 +20,7 @@ public class ContainsDuplicateIIILC220 {
     //
     static boolean containsNearbyAlmostDuplicateTree(int[] nums, int k, int t) {
         //1 5 9 1 5 9
-        public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
+
             //1 5 9 1 5 9
             TreeSet<Long> set=new TreeSet<>();
             for(int i=0;i<nums.length;i++){
@@ -36,7 +36,7 @@ public class ContainsDuplicateIIILC220 {
                 }
             }
             return false;
-        }
+
     }
 
 
