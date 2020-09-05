@@ -2,7 +2,7 @@ package practise;
 
 public class LC459 {
     public static void main(String[] args) {
-        String s="abac";
+        String s="ababac";
         System.out.println(repeatedSubstringPattern(s));
     }
 
