@@ -5,8 +5,8 @@
 KISS :Keep It Simple Stupid
 
 ##### Java Interview Questions
-Java 8-> https://github.com/winterbe/java8-tutorial
-In 28 min->bit.ly/micgogijava
+Java 8-> https://github.com/winterbe/java8-tutorial           
+In 28 min->https://bit.ly/micgogijava          
 Concurrency concepts-> https://www.youtube.com/channel/UCiz26UeGvcTy4_M3Zhgk7FQ
 ```
 //Immutable class 
@@ -81,20 +81,27 @@ https://medium.com/@mr.anmolsehgal/fail-fast-and-fail-safe-iterations-in-java-co
 
 
 ###Spring
-Differenc btwn ApplicationContext vs BeanFactory
+##### Differenc btwn ApplicationContext vs BeanFactory
 https://dzone.com/articles/difference-between-beanfactory-and-applicationcont
-Difference btwn rqst param and query param
+##### Difference btwn rqst param and query param
 https://medium.com/1developer/spring-requestparam-vs-queryparam-vs-pathvariable-vs-pathparam-7c5655e541ad        
-
+##### What is Transactional Isolation and Transaction Progation? 
+https://stackoverflow.com/questions/8490852/spring-transactional-isolation-propagation
+https://www.youtube.com/watch?v=CTCAo89fcQw      
+https://www.javainuse.com/spring/boot-transaction-propagation
+##### Monolithic Architecture vs Microservices
+https://www.tiempodev.com/blog/disadvantages-of-a-microservices-architecture/   
+##### AOP             
+https://www.javainuse.com/spring/spring-boot-aop
 ###### Helpful Links to get by 
+
+### Hiberate
+https://www.dineshonjava.com/difference-between-merge-and-update-methods-in-hibernate/
+
+
 [DataStructure and Algorithm Guide](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide)||
 [Amazon Interview Problems:](https://leetcode.com/discuss/interview-question/481968/Amazon-Interview-Problems-List-(Updated)/430085)|| [Patterns for Dp:](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns)                                  
 
-### Interview Preparation Links  
-h
-
-### Spring  
-https://www.edureka.co/blog/interview-questions/spring-interview-questions/
 
 
 
@@ -107,12 +114,12 @@ $ git rm -r --cached .
 $ git config credential.helper store 
 ```
 ### Sql questions asked
-max N salary 
+max N salary         
 
-select id,salary from emplpoyee e1 where N-1=(select count(DISTINCT salary) from employee e2 where e2.salary>e1.salary); 
-->Now this query will be slower because it is querying the entire table if asked for 1st highest 
-1st highest
-select MAX(salary) from employee;
-2nd highest
+select id,salary from emplpoyee e1 where N-1=(select count(DISTINCT salary) from employee e2 where e2.salary>e1.salary);          
+->Now this query will be slower because it is querying the entire table if asked for 1st highest             
+1st highest                  
+select MAX(salary) from employee;             
+2nd highest            
 select salary from employee where salary Not In (select MAX(salary) from employee);
 
