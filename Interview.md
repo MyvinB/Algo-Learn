@@ -1,8 +1,4 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/myvinb/Algo-Learn?style=plastic)  ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/myvinb/Algo-Learn?style=plastic)
 
-
-## Algo-Learn
-KISS :Keep It Simple Stupid
 
 ##### Java Interview Questions
 Java 8-> https://github.com/winterbe/java8-tutorial           
@@ -74,10 +70,10 @@ class Singleton
     } 
 } 
 ```
-HashMap Vs. ConcurrentHashMap Vs. SynchronizedMap – How a HashMap can be Synchronized in Java
-https://crunchify.com/hashmap-vs-concurrenthashmap-vs-synchronizedmap-how-a-hashmap-can-be-synchronized-in-java/
-Difference between fail safe and fail fast
-https://medium.com/@mr.anmolsehgal/fail-fast-and-fail-safe-iterations-in-java-collections-11ce8ca4180e
+HashMap Vs. ConcurrentHashMap Vs. SynchronizedMap – How a HashMap can be Synchronized in Java     
+https://crunchify.com/hashmap-vs-concurrenthashmap-vs-synchronizedmap-how-a-hashmap-can-be-synchronized-in-java/           
+Difference between fail safe and fail fast              
+https://medium.com/@mr.anmolsehgal/fail-fast-and-fail-safe-iterations-in-java-collections-11ce8ca4180e         
 
 
 ###Spring
@@ -92,7 +88,7 @@ https://www.javainuse.com/spring/boot-transaction-propagation
 ##### Monolithic Architecture vs Microservices
 https://www.tiempodev.com/blog/disadvantages-of-a-microservices-architecture/   
 ##### AOP             
-https://www.javainuse.com/spring/spring-boot-aop
+https://www.javainuse.com/spring/spring-boot-aop 
 ###### Helpful Links to get by 
 
 ### Hiberate
@@ -102,16 +98,6 @@ https://www.dineshonjava.com/difference-between-merge-and-update-methods-in-hibe
 [DataStructure and Algorithm Guide](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide)||
 [Amazon Interview Problems:](https://leetcode.com/discuss/interview-question/481968/Amazon-Interview-Problems-List-(Updated)/430085)|| [Patterns for Dp:](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns)                                  
 
-
-
-
-
-### COMMANDS
-```
-//To clear your entire Git cache, use the “git rm” command with the “-r” option for recursive.
-$ git rm -r --cached .
-//to help git store your creditionals for your repo
-$ git config credential.helper store 
 ```
 ### Sql questions asked
 max N salary         
