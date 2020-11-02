@@ -10,4 +10,5 @@ git push --force
 //  view commit history by displaying the first seven characters of the SHA-1 hash and commit message of the commits
 git log --oneline
 ```
-### 
+### Useful Coding Practices
+[Infrastructure as Code](https://www.thoughtworks.com/insights/blog/infrastructure-code-reason-smile)
