@@ -11,4 +11,5 @@ git push --force
 git log --oneline
 ```
 ### Useful Coding Practices
-[Infrastructure as Code](https://www.thoughtworks.com/insights/blog/infrastructure-code-reason-smile)
+[Infrastructure as Code](https://www.thoughtworks.com/insights/blog/infrastructure-code-reason-smile)               
+[Linux commnads](https://www.freecodecamp.org/news/the-linux-commands-handbook/)
