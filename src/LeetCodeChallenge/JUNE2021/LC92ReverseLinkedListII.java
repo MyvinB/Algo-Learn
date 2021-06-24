@@ -65,18 +65,6 @@ public class LC92ReverseLinkedListII {
         return head;
     }
 
-
-    public static ListNode reverseBetweenA(ListNode head,int left,int right){
-        int i=1;
-
-        ListNode start= head;
-        while(i==left-1){
-            start = start.next;
-            i++;
-        }
-        System.out.println(start.val);
-        return head;
-    }
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
@@ -85,10 +73,6 @@ public class LC92ReverseLinkedListII {
         head.next.next.next.next = new ListNode(5);
         int left = 2;
         int right = 4;
-        reverseBetweenA(head,left,right);
-
-
-
-
+        reverseBetween(head,left,right);
     }
 }
