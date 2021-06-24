@@ -3,11 +3,6 @@ package Challenge;/*
  09/08/20 5:51 PM 
  */
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class De {
     public static void main(String[] args) throws Exception {
@@ -57,12 +52,7 @@ public class De {
 
     }
 
-    static void checkedException() throws Exception{
-        assertEquals("chicken","chin");
-        assertEquals("chicken","chicken");
-        assertEquals("chicken","chin");
 
-    }
 
 
 
