@@ -1,7 +1,4 @@
 package LeetCodeChallenge.JUNE2021;
-
-import java.util.Arrays;
-
 public class LC307 {
     static class  NumArray {
         SegmentTreeNode rootNode = null;
@@ -60,7 +57,7 @@ public class LC307 {
         }
 
         int sumRangeHelper(SegmentTreeNode root,int start,int end){
-            if(root.start ==start && root.end == end) return rootNode.sum;
+            if(root.start ==start && root.end == end) return root.sum;
             else {
                 int mid = root.start + (root.end- root.start)/2;
                 if(end<=mid){
@@ -77,8 +74,6 @@ public class LC307 {
             int ar[]= {9,-8};
             NumArray temp =new NumArray(ar);
             temp.sumRange(1,1);
-
-
         }
     }
 }
