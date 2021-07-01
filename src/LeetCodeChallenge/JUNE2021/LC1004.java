@@ -22,12 +22,7 @@ public class LC1004 {
 
     public static void main(String[] args) {
         int[] nums = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
-        /**
-         *->0,0,1,1,0 i =4 k=0 j=0
-         0,*->0,1,1,0,0 i=5 j=1 k=1
-
-
-         */
+     
         System.out.println(longestOnes(nums,3));
     }
 }
