@@ -5,7 +5,7 @@ public class LC791 {
     public static void main(String[] args) {
         customSortString("cba", "abcd");
     }
-
+    //If there is another way do not use .contains it is expensive.
     public static String customSortString(String order, String str) {
         StringBuilder sb = new StringBuilder();
         int[] ar = new int[26];
