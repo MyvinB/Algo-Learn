@@ -9,7 +9,7 @@ public class LC927 {
 
     public static int[] threeEqualParts(int[] arr) {
         int noOf1s = 0;
-        int[] ans = new int[]{-1, 1};
+        int[] ans = new int[]{-1, -1};
         for (int i : arr) {
             if (i == 1) noOf1s++;
         }
@@ -28,7 +28,6 @@ public class LC927 {
         noOf1s = 0;
         //Getting starting pointers of each index
         for (int i = 0; i < arr.length; i++) {
-
             if (arr[i] == 1) {
                 noOf1s++;
                 System.out.println(noOf1s);
@@ -41,7 +40,6 @@ public class LC927 {
                 }
             }
         }
-        System.out.println("new line");
 
 
         while (twoIndex < arr.length) {
