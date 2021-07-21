@@ -22,9 +22,6 @@ public class LC25 {
         }
     }
 
-    public static void main(String[] args) {
-
-    }
 
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode dummy = new ListNode(-1);
@@ -40,7 +37,7 @@ public class LC25 {
         while (totalNodes >= k) {
             cur = prev.next;
             next = cur.next;
-            for(int i=1;i<k ;i++){
+            for (int i = 1; i < k; i++) {
                 cur.next = next.next;
                 next.next = prev.next;
                 prev.next = next;
