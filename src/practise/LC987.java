@@ -41,7 +41,6 @@ public class LC987 {
         dfsHelper(root,0,0);
         List<List<Integer>> res = new ArrayList<>();
         for(int i=min;i<=max;i++){
-            System.out.println(i);
             List<Integer> vlevel = new ArrayList<>();
             //List will be ordered here treemap magic
             for(int key:map.get(i).keySet()){
