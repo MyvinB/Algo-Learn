@@ -19,7 +19,7 @@ public class LC128 {
         }
         int count = 0;
         for (int n : set) {
-            if (!set.contains(n + 1)) {
+            if (!set.contains(n + 1)) { //dead side with no increment
                 int m = n - 1;
                 while (set.contains(m)) {
                     m--;
