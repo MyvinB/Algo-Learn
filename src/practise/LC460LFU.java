@@ -61,31 +61,31 @@ public class LC460LFU {
             this.capacity = capacity;
         }
 
-        public static void main(String[] args) {
-            LFUCache test = new LFUCache(2);
-            test.put(1,1);
-            test.put(2,2);
-            System.out.println("fre"+test.leastFreqCount);
-            System.out.println(test.get(1));
-            System.out.println("fre"+test.leastFreqCount);
-
-            test.put(3,3);
-            System.out.println("fre"+test.leastFreqCount);
-
-            System.out.println(test.get(2));
-            System.out.println("fre"+test.leastFreqCount);
-
-            System.out.println(test.get(3));
-            System.out.println("Lastfre"+test.leastFreqCount);
-
-            test.put(4,4);
-            System.out.println("fre"+test.leastFreqCount);
-
-            System.out.println(test.get(1));
-            System.out.println(test.get(3));
-            System.out.println(test.get(4));
-
-        }
+//        public static void main(String[] args) {
+//            LFUCache test = new LFUCache(2);
+//            test.put(1,1);
+//            test.put(2,2);
+//            System.out.println("fre"+test.leastFreqCount);
+//            System.out.println(test.get(1));
+//            System.out.println("fre"+test.leastFreqCount);
+//
+//            test.put(3,3);
+//            System.out.println("fre"+test.leastFreqCount);
+//
+//            System.out.println(test.get(2));
+//            System.out.println("fre"+test.leastFreqCount);
+//
+//            System.out.println(test.get(3));
+//            System.out.println("Lastfre"+test.leastFreqCount);
+//
+//            test.put(4,4);
+//            System.out.println("fre"+test.leastFreqCount);
+//
+//            System.out.println(test.get(1));
+//            System.out.println(test.get(3));
+//            System.out.println(test.get(4));
+//
+//        }
         public int get(int key) {
             Node node = map.get(key);
             if(node== null) return -1;
@@ -94,6 +94,7 @@ public class LC460LFU {
         }
 
         public void put(int key, int value) {
+            if(capacity==0) return;
             Node node;
             if(map.containsKey(key)){
                 node = map.get(key);
