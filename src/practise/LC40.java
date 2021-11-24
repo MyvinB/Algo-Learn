@@ -14,12 +14,12 @@ public class LC40 {
     public static void main(String[] args) {
         int[] nums = {10,1,2,7,6,1,5};
                 //1,1,2,5,6,7,10
-        Arrays.sort(nums);
         System.out.println(combinationSum2(nums,8));
     }
 
 
     public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        Arrays.sort(candidates);
         List<List<Integer>> list = new ArrayList<>();
         backTrack(candidates,target,list,new ArrayList<>(),0);
         return list;
