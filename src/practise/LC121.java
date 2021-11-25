@@ -5,6 +5,12 @@ package practise;/*
 
 public class LC121 {
 
+
+    public static void main(String[] args) {
+        int[] nums = {7,1,5,3,6,4};
+        System.out.println(maxProfitKadaneWay(nums));
+    }
+
     public int maxProfit(int[] prices) {
         if(prices.length==0|| prices.length==1) return 0;
         int b1=-prices[0];
@@ -16,6 +22,16 @@ public class LC121 {
 
         }
         return s1;
+    }
+
+
+    public static int maxProfitKadaneWay(int[] prices){
+        int maxCur= 0,maxSoFar = 0;
+        for(int i=1;i<prices.length;i++){
+            maxCur = Math.max(0,maxCur += prices[i]-prices[i-1]);
+            maxSoFar = Math.max(maxCur,maxSoFar);
+        }
+        return maxSoFar;
     }
 
 }
