@@ -27,8 +27,8 @@ public class LC617 {
 
     public static TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         TreeNode root = null;
-        dfs(root1,root2,root);
-        return root;
+
+        return dfs(root1,root2,null);
     }
 
 
@@ -38,7 +38,6 @@ public class LC617 {
         if(root1!= null) sum+=root1.val;
         if(root2!=null) sum+=root2.val;
         root = new TreeNode(sum);
-
         root.left = dfs(root1!=null?root1.left:null,  root2!=null?root2.left:null,  root.left);
         root.right = dfs(root1!=null?root1.right:null,root2!=null?root2.right:null,root.right);
         return root;
