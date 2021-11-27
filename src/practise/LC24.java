@@ -13,9 +13,8 @@ public class LC24 {
     }
 
     public ListNode swapPairs(ListNode head) {
-        ListNode dumy = new ListNode(0) ;
-        dummy.next= head;
-        head = dummy;
+        ListNode dummy = new ListNode(0) ;
+        dummy.next = head;
         ListNode cur = dummy;
         while(cur.next!=null && cur.next.next!=null){
             ListNode first = cur.next;
@@ -25,6 +24,6 @@ public class LC24 {
             cur.next.next= first;
             cur = cur.next.next;
         }
-        return head.next;
+        return dummy.next;
     }
 }
