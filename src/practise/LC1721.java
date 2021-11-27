@@ -47,11 +47,22 @@ public class LC1721 {
         ListNode firstNext = first.next;
         ListNode secondNext = second.next;
 
-        second.next = firstNext;
-        first.next = secondNext;
-        firstPrev.next = second;
-        secondPrev.next = first;
-
+        if(secondPrev==first){
+            firstPrev.next = second;
+            second.next = first;
+            first.next = secondNext;
+        }
+        else if(second.next == first){
+            secondPrev.next = first;
+            first.next = second;
+            second.next = firstNext;
+        }
+        else{
+            second.next = firstNext;
+            first.next = secondNext;
+            firstPrev.next = second;
+            secondPrev.next = first;
+        }
         return dummy.next;
 
     }
