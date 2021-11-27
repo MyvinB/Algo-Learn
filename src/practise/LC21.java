@@ -21,11 +21,11 @@ public class LC21 {
         l2.next= new ListNode(3);
         l2.next.next = new ListNode(4);
         mergeTwoLists(l1,l2);
-
     }
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(0);
+        ListNode head = dummy;
         int val = 0;
         while(true){
             if(list1 == null){
@@ -47,7 +47,7 @@ public class LC21 {
             dummy = dummy.next;
         }
 
-        return dummy.next;
+        return head.next;
 
     }
 }
