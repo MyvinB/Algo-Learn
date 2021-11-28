@@ -27,15 +27,6 @@ public class LC238 {
             right *= nums[i];
 
         }
-//        product =1;
-// 1 2 3 4
-// 1 2 6 24
-//
-//        for(int i=nums.length-2 ;i>0;i--){
-//            product = product * nums[i+1];
-//            res[i]= res[i-1] * product;
-//        }
-//        res[nums.length-1] = res[i]
         System.out.println(Arrays.toString(res));
         return res;
 
