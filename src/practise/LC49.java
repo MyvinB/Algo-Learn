@@ -17,13 +17,23 @@ public class LC49 {
     }
 
     public static List<List<String>> groupAnagrams(String[] strs) {
-        HashMap<Integer,List<String>> map = new HashMap<>();
+        HashMap<String,List<String>> map = new HashMap<>();
+        List<List<String>> res = new ArrayList<>();
         for(String s:strs){
             char[] temp = s.toCharArray();
             Arrays.sort(temp);
             String toCheck =Arrays.toString(temp);
-            System.out.println(toCheck);
+            List<String> tempList;
+            if(map.containsKey(toCheck)){
+                tempList = map.get(toCheck);
+            }
+            else tempList = new ArrayList<>();
+            tempList.add(s);
+            map.put(toCheck,tempList);
         }
-        return null;
+        for(String s:map.keySet()){
+            res.add(map.get(s));
+        }
+        return res;
     }
 }
