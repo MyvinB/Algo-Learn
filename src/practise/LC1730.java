@@ -28,6 +28,7 @@ public class LC1730 {
                 int[] pos = q.poll();
                 int x = pos[0];
                 int y = pos[1];
+                if(grid[x][y] == '#') return step;
                 for(int[] d:dir){
                     int newX= x+ d[0];
                     int newY = y+d[1];
@@ -40,7 +41,7 @@ public class LC1730 {
             }
             step++;
         }
-        return step;
+        return -1;
     }
 
     public int[] findStart(char[][] grid){
