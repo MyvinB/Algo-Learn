@@ -11,7 +11,7 @@ public class LC878 {
     }
 
     public static int nthMagicalNumber(int n, int A, int B) {
-        long a = A, b = B, mod = (long)1e9 + 7;
+        long a = A, b = B,l = 2, r = (long)1e14, mod = (long)1e9 + 7;
         long tmp;
         while(b>0){
             tmp=a;
@@ -19,7 +19,12 @@ public class LC878 {
             b = tmp%b;
         }
         System.out.println("GCD IS "+a);
-        long res = (n*A*B) /(A+B-a);
-        return (int)res;
+        while(l<r){
+            long m = (l+r)/2;
+            if(m/A+m/B-m/(A*B/a)<n)l=m+1;
+            else r=m;
+        }
+        return (int)(l%mod);
+
     }
 }
