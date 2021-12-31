@@ -9,7 +9,7 @@ public class LC1015 {
     public static void main(String[] args) {
         System.out.println(smallestRepunitDivByK(4));
     }
-
+    //Important to understand arithmetic modulo
     public static int smallestRepunitDivByK(int k) {
         if(k==2 || k==5) return -1;
         int remainder =0;
