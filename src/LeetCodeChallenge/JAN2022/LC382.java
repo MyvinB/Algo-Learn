@@ -22,7 +22,6 @@ public class LC382 {
         rand = new Random();
     }
     public static void main(String[] args) {
-        System.out.println(rand.nextInt(2));
     }
     ListNode head=null;
     Random rand=null;
