@@ -40,7 +40,7 @@ public class LC1463 {
             currentCherry = grid[r][c1];
         }
         else currentCherry = grid[r][c1]+grid[r][c2];
-
-        return maxCherry+currentCherry;
+        dp[r][c1][c2] = maxCherry+currentCherry;
+        return dp[r][c1][c2];
     }
 }
