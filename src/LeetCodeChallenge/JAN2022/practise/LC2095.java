@@ -5,7 +5,7 @@ package LeetCodeChallenge.JAN2022.practise;
  * on 8:21 PM 1/8/2022
  */
 public class LC2095 {
-    
+
       public class ListNode {
           int val;
           ListNode next;
