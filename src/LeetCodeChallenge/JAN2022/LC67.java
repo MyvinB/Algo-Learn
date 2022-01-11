@@ -7,6 +7,7 @@ package LeetCodeChallenge.JAN2022;
 public class LC67 {
     public static void main(String[] args) {
         System.out.println(addBinary("11","11"));
+
     }
 
     public static String addBinary(String a, String b) {
