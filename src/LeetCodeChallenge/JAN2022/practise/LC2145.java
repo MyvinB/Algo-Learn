@@ -20,8 +20,8 @@ public class LC2145 {
             min = Math.min(min,current);
             max = Math.max(max,current);
         }
-        int upperBound = upper - max;
-        int lowerBound = lower - min;
+        int upperBound = (int) (upper - max);
+        int lowerBound = (int) (lower - min);
 
         if(upperBound-lowerBound+1>0) res = upperBound-lowerBound+1;
         return res;
