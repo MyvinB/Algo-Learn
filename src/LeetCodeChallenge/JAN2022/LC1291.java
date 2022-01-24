@@ -15,13 +15,14 @@ public class LC1291 {
 
     public static List<Integer> sequentialDigits(int low, int high) {
         String s = "123456789";
+        List<Integer> res = new ArrayList<>();
         for(int i=2;i<=s.length();i++){
             for(int j=0;j+i<=s.length();j++){
                 int num = Integer.parseInt(s.substring(j,j+i));
-                System.out.println(num);
+                if(num>= low &&  num<=high) res.add(num);
             }
         }
-        return new ArrayList<>();
+        return res;
     }
 
 
