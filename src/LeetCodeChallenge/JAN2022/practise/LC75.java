@@ -31,7 +31,7 @@ public class LC75 {
         }
         //If the variable after excahnge from high is not one and zero needs to be compared again with low and it moves forward
         //if its 1 it will increment
-        
+
     }
 
     private static void swap(int[] A,int i,int j){
