@@ -18,7 +18,6 @@ public class LC26 {
                 nums[i++]=nums[j];
             }
         }
-        //Zero based indexing
         return i;
 
     }
