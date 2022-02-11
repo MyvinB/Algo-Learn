@@ -43,7 +43,6 @@ public class LC438 {
                     res.add(begin);
                 }
                 begin++;
-
             }
 
         }
