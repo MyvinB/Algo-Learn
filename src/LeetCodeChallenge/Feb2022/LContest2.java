@@ -14,7 +14,7 @@ public class LContest2 {
 //        countOperations(10,10);
         minimumOperations(new int[]{2,2});
     }
-
+    //Solved but optimisation possible include divisions and modulus operation
     public static int countOperations(int num1, int num2) {
         int count=0;
         while(num1!=0 && num2!=0){
@@ -25,7 +25,7 @@ public class LContest2 {
         }
         return count;
     }
-    //COMPLETE fAIL
+    //Fail partially solved the problem though
     public static int minimumOperations(int[] nums) {
         HashMap<Integer,Integer> mapEven = new HashMap<>();
         HashMap<Integer,Integer> mapOdd = new HashMap<>();
