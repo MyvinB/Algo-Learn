@@ -35,6 +35,6 @@ public class LC236 {
         return left!=null?left:right;
     }
 
-    
+
 
 }
