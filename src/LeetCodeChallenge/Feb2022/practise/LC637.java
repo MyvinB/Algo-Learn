@@ -16,14 +16,20 @@ public class LC637 {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;
         }
-
+    }
 
         public static void main(String[] args) {
 
@@ -38,8 +44,8 @@ public class LC637 {
             double sum=0;
             for(int i=0;i<size;i++){
                 TreeNode t = queue.poll();
-                if(t.left!=null) queue.add(t);
-                if(t.right!=null) queue.add(t);
+                if(t.left!=null) queue.add(t.left);
+                if(t.right!=null) queue.add(t.right);
                 sum += t.val;
             }
             res.add(sum/size);
