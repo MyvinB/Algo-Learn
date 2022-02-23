@@ -31,7 +31,7 @@ public class LC322 {
             }
         }
         System.out.println(Arrays.toString(dp));
-        return dp[amount]!=amount?dp[amount]:-1;
+        return dp[amount]!=amount+1?dp[amount]:-1;
     }
 
 }
