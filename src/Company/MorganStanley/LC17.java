@@ -1,8 +1,6 @@
 package Company.MorganStanley;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author mmichaelbarboza
@@ -16,18 +14,44 @@ public class LC17 {
     }
 
     public static List<String> letterCombinations(String digits) {
-        LinkedList<String> ans = new LinkedList<String>();
-        if(digits.isEmpty()) return ans;
-        String[] mapping = new String[] {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        ans.add("");
-        for(int i =0; i<digits.length();i++){
+        //iteratvie
+        LinkedList<String> queue = new LinkedList<>();
+        if(digits.isEmpty()) return queue;
+        String[] s = new String[]{"0","1","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+        queue.add("");
+        for(int i=0;i<digits.length();i++){
             int x = Character.getNumericValue(digits.charAt(i));
-            while(ans.peek().length()==i){
-                String t = ans.remove();
-                for(char s : mapping[x].toCharArray())
-                    ans.add(t+s);
+            while(queue.peek().length()==i){
+                String prev = queue.poll();
+                for(char t: s[x].toCharArray()){
+                    queue.offer(prev+t);
+                }
             }
         }
-        return ans;
+        return queue;
     }
+
+
+
+    public static List<String> letterCombinationsDfs(String digits) {
+        String[] s = new String[]{"0","1","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+        List<String> res = new ArrayList<>();
+        if(digits.length() == 0) return res;
+        dfs(digits,s,"",0,res);
+        return res;
+    }
+
+    public static void dfs(String digits,String[] map,String prefix,int index,List<String> res){
+        //Terminal Conditions
+        if(index>=digits.length()){
+            res.add(prefix);
+            return;
+        }
+        int num = Character.getNumericValue(digits.charAt(index));
+        String letters = map[num];
+        for(int i=0;i<letters.length();i++){
+            dfs(digits,map,prefix+letters.charAt(i),index+1,res);
+        }
+    }
+
 }
