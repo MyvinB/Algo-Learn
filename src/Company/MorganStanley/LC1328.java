@@ -13,22 +13,15 @@ public class LC1328 {
 
     public static String breakPalindrome(String palindrome) {
         if(palindrome.length()<=1) return "";
-        char toFind = 'a' ;
-        int index =0;
-        for(int i=0;i<palindrome.length();i++){
-            if(palindrome.charAt(i) != 'a'){
-                index = i;
-                toFind = palindrome.charAt(i);
-                break;
+        char[] ar = palindrome.toCharArray();
+        int n = palindrome.length();
+        for(int i=0;i<n/2;i++){
+            if(ar[i]!='a'){
+                ar[i] = 'a';
+                return String.valueOf(ar);
             }
         }
-        System.out.println(toFind);
-        if(toFind == 'a'){
-            toFind = (char)(toFind+1);
-            index = palindrome.length()-1;
-        }else{
-            toFind = (char)(toFind-1);
-        }
-        return palindrome.substring(0,index)+toFind+palindrome.substring(index+1) ;
+        ar[n-1] = 'b';
+        return n<2? "": String.valueOf(ar) ;
     }
 }
