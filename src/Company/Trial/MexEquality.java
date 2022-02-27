@@ -9,6 +9,7 @@ import java.util.Set;
  * on 6:00 AM 2/26/2022
  * Time Taken:
  */
+///FAIL NEED A BETTER SOLN
 public class MexEquality {
 
     public static void main(String[] args) {
