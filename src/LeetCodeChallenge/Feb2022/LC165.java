@@ -1,5 +1,6 @@
 package LeetCodeChallenge.Feb2022;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -20,12 +21,15 @@ public class LC165 {
        int n1 = s1.length();
        int n2 = s2.length();
        int i=0,j=0;
+
        while(i<n1 || j<n2){
-           while(i<n1 && s1.charAt(i++) != '.'){
-               temp1 = temp1*10 + s1.charAt(i)-'0';
+           temp1 = 0;
+           temp2 = 0;
+           while(i<n1 && s1.charAt(i) != '.'){
+               temp1 = temp1*10 + s1.charAt(i++)-'0';
            }
-           while(j<n2 && s2.charAt(j++) != '.'){
-               temp2 = temp2*10 + s2.charAt(i)-'0';
+           while(j<n2 && s2.charAt(j) != '.'){
+               temp2 = temp2*10 + s2.charAt(j++)-'0';
            }
            if(temp1<temp2) return -1;
            else if(temp1>temp2) return 1;
