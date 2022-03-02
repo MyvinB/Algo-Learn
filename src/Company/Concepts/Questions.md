@@ -6,6 +6,8 @@ Difference between http vs https
 Java 
 Explain internal working of hashmap
 Why do we need to override equals and hashcode method
+How do you create a singleton class in java
+How do you create a immmutable class in java 
 
 Tomact
 Explain internal engine of tomcat server

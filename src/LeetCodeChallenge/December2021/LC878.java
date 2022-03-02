@@ -18,7 +18,7 @@ public class LC878 {
             a = b;
             b = tmp%b;
         }
-        System.out.println("GCD IS "+a);
+        System.out.println("practise.GCD IS "+a);
         while(l<r){
             long m = (l+r)/2;
             if(m/A+m/B-m/(A*B/a)<n)l=m+1;
