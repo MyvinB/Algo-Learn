@@ -15,3 +15,6 @@ https://medium.com/javarevisited/internal-working-of-hashmap-in-java-97aeac3c7be
 HashSet -> Uses hasmap internaly and a final static present variable as its object
 
 ArraysList size is 10 
+
+
+Intern
