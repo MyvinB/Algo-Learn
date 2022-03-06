@@ -34,6 +34,13 @@ What is autowiring and name the different modes of it?
 Q Why singleton is not thread safe?
 A singleton class itself is not thread safe. Multiple threads can access the singleton same time and create multiple objects, violating the singleton concept. The singleton may also return a reference to a partially initialized object.
 
+Q) In try with resource would a plain try give you a syntax error ? No it would not give you a syntax error 
+
+Q) Explain circular dependency in spring boot how is it handled ?
+https://www.baeldung.com/circular-dependencies-in-spring
+
+Q)What is a junit lifecycle?
+Setup and teardown
 
 React Js and front end interview qs
 Promise async await resolve and reject
