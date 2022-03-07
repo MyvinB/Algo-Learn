@@ -33,8 +33,9 @@ public class Trial13 {
                 temp.remove(temp.size()-1);
                 map.put(i,temp);
             }
-
         }
+
+
         System.out.println(map);
     }
 
