@@ -13,8 +13,6 @@ public class LC937 {
     public static void main(String[] args) {
         String s = "dig1 8 1 5 1";
         System.out.println(Arrays.toString(s.split(" ",2)));
-
-        Arrays.sort(a);
     }
 
     public String[] reorderLogFiles(String[] logs) {
