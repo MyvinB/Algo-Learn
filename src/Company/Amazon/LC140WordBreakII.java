@@ -13,6 +13,8 @@ import java.util.List;
 public class LC140WordBreakII {
 
     public static void main(String[] args) {
+        //Do not use static while passing testcases will be one map and will give wrong answer
+
         String s = "a";
         String[] ar = {"b","cats","and","sand","dog"};
         System.out.println(wordBreak(s, Arrays.asList(ar)));
@@ -21,7 +23,7 @@ public class LC140WordBreakII {
     public static HashMap<String,List<String>> map=new HashMap<>();
     public static List<String> wordBreak(String s, List<String> wordDict) {
       List<String> res = new ArrayList<>();
-        if(s==null || s.length() == 0)
+      if(s==null || s.length() == 0)
             return res;
       if(map.containsKey(s)) return map.get(s);
       if(wordDict.contains(s)) res.add(s);

@@ -1,6 +1,6 @@
 package practise;
 
-public class LinkedList {
+public class LinkedList<S> {
     static class Node {
         int value;
 

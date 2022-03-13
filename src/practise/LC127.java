@@ -21,7 +21,7 @@ public class LC127 {
             set.add(s);
         }
         if(!set.contains(endWord)) return 0;
-        Queue<String> q = new LinkedList<>();
+        Queue<String> q = (Queue<String>) new LinkedList<String>();
         q.add(beginWord);
         int depth =1;
         while(!q.isEmpty()){
