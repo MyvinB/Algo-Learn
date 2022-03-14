@@ -16,15 +16,15 @@ public class MaximizeTheTopmostElementAfterKMoves {
     }
 
     public static int maximumTop(int[] nums, int k) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->b-a);
-        if(k==1 && nums.length==1) return -1;
-        if(k==1) return nums[1];
-        int t = k-1;
-        for(int i =0;i<nums.length;i++){
-            if(t==0) break;
-            pq.offer(nums[i]);
-            t--;
+        if(nums.length==1 && k%2==1) return -1;
+        int max = 0;
+        for(int i=0;i<Math.min(k-1,nums.length);i++){
+            max = Math.max(max,nums[i]);
         }
-        return pq.poll();
+
+        if (k<nums.length){
+            max = Math.max(max,nums[k]);
+        }
+        return max;
     }
 }
