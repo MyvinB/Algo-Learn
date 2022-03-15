@@ -26,6 +26,6 @@ public class LC1249 {
             sb.setCharAt(stack.pop(),'*');
         }
 
-        return sb.replace('\\*','').toString();
+        return sb.toString().replace("\\*","");
     }
 }
