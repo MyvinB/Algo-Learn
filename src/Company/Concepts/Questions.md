@@ -42,6 +42,12 @@ https://www.baeldung.com/circular-dependencies-in-spring
 Q)What is a junit lifecycle?
 Setup and teardown
 
+Q) Explain garbage collection what algo is used for garbage collection ?
+Q) Can static method be overridden and ocerloaded? static method can be overloaded but not overridden 
+Q) Explain thread lifecycle ?
+https://www.javatpoint.com/life-cycle-of-a-thread
+
+
 React Js and front end interview qs
 Promise async await resolve and reject
 https://www.youtube.com/watch?v=Gjbr21JLfgg
@@ -52,3 +58,4 @@ Distance between two nodes in a binary tree?
 Write a program to print odd and even numbers using threads
 Write a program to simulate dead lock 
 
+Questions not yet asked but imp to know

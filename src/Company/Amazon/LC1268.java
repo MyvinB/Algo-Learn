@@ -44,7 +44,7 @@ public class LC1268 {
         for (int i = 0; i < products.length; i++) {
             map.put(products[i], i);
         }
-
+//prefix + "~" helps you find the upper bound, '~' is one option, any character after 'z' should be also working such as '{'.
         String key = "";
         for (char c : searchWord.toCharArray()) {
             key += c;

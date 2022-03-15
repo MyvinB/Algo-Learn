@@ -19,3 +19,10 @@ https://www.javatpoint.com/difference-between-comparable-and-comparator
 q)Difference between BeanFactory vs ApplicationContext
 https://springframework.guru/spring-beanfactory-vs-applicationcontext/
 
+@Difference between local variable and instantiated variable ?
+https://pediaa.com/what-is-the-difference-between-instance-variable-and-local-variable/#:~:text=An%20instance%20variable%20is%20a%20variable%20that%20is%20declared%20in,instance%20variable%20and%20local%20variable.
+
+Questions not yet asked but imp to know
+
+Q) Differentiate between static and default in an iterface?
+https://www.tutorialspoint.com/difference-between-default-and-static-interface-method-in-java-8#:~:text=Default%20methods%20enable%20you%20to,rather%20than%20with%20any%20object.
