@@ -13,7 +13,7 @@ public class LC863 {
     public static void main(String[] args) {
 
     }
-
+    //For now iteratively is okay but have too do dfs also
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         Map<TreeNode,TreeNode> map = new HashMap<>();
         Queue<TreeNode> queue = new LinkedList<>();
@@ -38,7 +38,6 @@ public class LC863 {
         int dist = 0;
         List<Integer> res = new ArrayList<>();
         while(!queue.isEmpty()){
-
             if(dist == k){
                 //Basically at this level we have all the nodes at distance k
                 while(!queue.isEmpty()) res.add(queue.poll().val);
@@ -53,11 +52,6 @@ public class LC863 {
             //With every level increase the distance as its one move
             dist++;
         }
-
-
-
-
-
-
+        return res;
     }
 }
