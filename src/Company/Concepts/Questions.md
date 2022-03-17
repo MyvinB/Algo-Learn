@@ -46,6 +46,25 @@ Q) Explain garbage collection what algo is used for garbage collection ?
 Q) Can static method be overridden and ocerloaded? static method can be overloaded but not overridden 
 Q) Explain thread lifecycle ?
 https://www.javatpoint.com/life-cycle-of-a-thread
+Q) What is covariant return type in java
+https://www.tutorialspoint.com/Covariant-return-types-in-Java#:~:text=Covariant%20return%20type%20refers%20to,for%20non%2Dprimitive%20return%20types.
+
+Q)What are the different ways to create threads in java ?
+https://www.javatpoint.com/how-to-create-a-thread-in-java
+
+Q)Suppose you call the thread.run method directly without calling thread.start what will happen ?
+https://java2blog.com/can-we-call-run-method-directly-to-start-thread/#:~:text=No%2C%20you%20can%20not%20directly,in%20same%20stack%20as%20main.
+
+Q)Method overriding and different exception states ?
+If you are overdding a method and the method in parent class throws exception does child class have to throw exception -> No read article
+If you are placed in the above scenario but parent class throws arithmetic exceptrion and child throws exception -> compile time error child cannot have larger exception
+If you parent class throws no exception the child class can only throw checked exception
+https://www.javatpoint.com/exception-handling-with-method-overriding
+
+Q)What is spring mvc ?
+https://www.javatpoint.com/spring-mvc-interview-questions
+
+
 
 
 React Js and front end interview qs
