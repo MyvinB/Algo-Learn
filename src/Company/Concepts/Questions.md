@@ -58,7 +58,7 @@ https://java2blog.com/can-we-call-run-method-directly-to-start-thread/#:~:text=N
 Q)Method overriding and different exception states ?
 If you are overdding a method and the method in parent class throws exception does child class have to throw exception -> No read article
 If you are placed in the above scenario but parent class throws arithmetic exceptrion and child throws exception -> compile time error child cannot have larger exception
-If you parent class throws no exception the child class can only throw checked exception
+If you parent class throws no exception the child class can only throw unchecked exception
 https://www.javatpoint.com/exception-handling-with-method-overriding
 
 Q)What is spring mvc ?
