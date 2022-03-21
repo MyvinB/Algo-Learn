@@ -40,7 +40,7 @@ public class LC895 {
         PriorityQueue<int[]> pq;
         int index = 0;
         HashMap<Integer,Integer> freq;
-        public FreqStack() {
+        public void FreqStack() {
             freq = new HashMap<>();
             //if freq is same then you check index
             pq = new PriorityQueue<>((a,b)->a[1]!=b[1]?b[1]-a[1]:b[2]-a[2]);
@@ -49,12 +49,13 @@ public class LC895 {
         public void push(int val) {
             int f = freq.getOrDefault(val,0)+1;
             freq.put(val,f);
-            pq.offer(new int[]{val,freq.get(f),index++});
+            pq.offer(new int[]{val,freq.get(val),index++});
         }
 
         public int pop() {
             int pop = pq.poll()[0];
             freq.put(pop,freq.get(pop)-1);
+            if(freq.get(pop)==0) freq.remove(pop);
             return pop;
         }
     }
