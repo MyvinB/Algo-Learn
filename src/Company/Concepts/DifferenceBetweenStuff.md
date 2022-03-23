@@ -26,3 +26,6 @@ Questions not yet asked but imp to know
 
 Q) Differentiate between static and default in an iterface?
 https://www.tutorialspoint.com/difference-between-default-and-static-interface-method-in-java-8#:~:text=Default%20methods%20enable%20you%20to,rather%20than%20with%20any%20object.
+
+QDifference between SQL AND NOSQL DATABASE?
+https://www.geeksforgeeks.org/difference-between-sql-and-nosql/

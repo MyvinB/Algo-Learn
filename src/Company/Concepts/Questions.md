@@ -23,7 +23,7 @@ Do you know any sprinboot cli commands
 Explain Spring boot model view controller
 Explain about a few modules in spring boot
 
-Q) why do we use controller advice?
+Q) why do we use controller advice? (remeber controller adivce is async )
 https://medium.com/@jovannypcg/understanding-springs-controlleradvice-cd96a364033f
 
 Q)Explain the spring life cycle of a bean
@@ -46,6 +46,7 @@ Q) Explain garbage collection what algo is used for garbage collection ?
 Q) Can static method be overridden and ocerloaded? static method can be overloaded but not overridden 
 Q) Explain thread lifecycle ?
 https://www.javatpoint.com/life-cycle-of-a-thread
+Q) What is flat map in java 8 ?
 Q) What is covariant return type in java
 https://www.tutorialspoint.com/Covariant-return-types-in-Java#:~:text=Covariant%20return%20type%20refers%20to,for%20non%2Dprimitive%20return%20types.
 
@@ -78,3 +79,4 @@ Write a program to print odd and even numbers using threads
 Write a program to simulate dead lock 
 
 Questions not yet asked but imp to know
+What is cap theorm? 
