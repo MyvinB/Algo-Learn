@@ -1,5 +1,6 @@
 package LeetCodeChallenge.MAR2022;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -17,17 +18,24 @@ public class LC881 {
     }
 
     public static int numRescueBoats(int[] people, int limit) {
-        int total = 0;
+        Arrays.sort(people);
+        int low = 0;
+        int high = people.length-1;
         int count = 0;
-        for(int i=0;i<people.length;i++){
-            total +=people[i];
-            if(total>limit){
+        while(low<=high){
+            int sum = people[low]+people[high];
+            if(sum<=limit) {
                 count++;
-                total = people[i];
+                low++;
+                high--;
+            }
+            else {
+                high--;
+                count++;
             }
         }
-        if(total==limit) count++;
         return count;
+
 
     }
 }
