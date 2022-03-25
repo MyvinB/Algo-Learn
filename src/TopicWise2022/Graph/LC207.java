@@ -15,19 +15,6 @@ public class LC207 {
         System.out.println(canFinishDFS(n,t));
     }
 
-
-    public static boolean canFinishDFS(int numCourses, int[][] prerequisites) {
-        int n = numCourses;
-        HashMap<Integer, List<Integer>> adjList = new HashMap<>();
-        for(int p[]:prerequisites){
-            addToList(p[1],p[0],adjList);
-        }
-        int[] visited = new int[n];
-        for(int i=0;i<n;i++){
-            if(!dfs(i,visited,adjList)) return false;
-        }
-        return true;
-    }
 ///--------------------------------------------------------------------------------------------BFS--------------------------------------------------------------------------------------------
     public static boolean canFinishBFS(int numCourses,int[][] prerequisites){
         int n = numCourses;
@@ -65,6 +52,19 @@ public class LC207 {
     }
 
 ///--------------------------------------------------------------------------------------------DFS--------------------------------------------------------------------------------------------
+
+    public static boolean canFinishDFS(int numCourses, int[][] prerequisites) {
+        int n = numCourses;
+        HashMap<Integer, List<Integer>> adjList = new HashMap<>();
+        for(int p[]:prerequisites){
+            addToList(p[1],p[0],adjList);
+        }
+        int[] visited = new int[n];
+        for(int i=0;i<n;i++){
+            if(!dfs(i,visited,adjList)) return false;
+        }
+        return true;
+    }
 
     public static boolean dfs(int index,int[] visited,HashMap<Integer,List<Integer>> adjList){
         //We found a cycle abord
