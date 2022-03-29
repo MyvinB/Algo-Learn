@@ -8,7 +8,7 @@ package LeetCodeChallenge.MAR2022;
 public class LC81 {
 
     public static void main(String[] args) {
-        System.out.println(search(new int[]{1,0,1,1,1},0));
+        System.out.println(search(new int[]{1,1,1,1,1,1,1,1,1,13,1,1,1,1,1,1,1,1,1,1,1,1},13));
     }
 
     public static boolean search(int[] nums, int target) {

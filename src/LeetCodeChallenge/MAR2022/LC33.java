@@ -19,16 +19,17 @@ public class LC33 {
             int mid = low+(high-low)/2;
             //see if left half is sorted
             if(nums[mid]==target) return mid;
-            if(nums[low]<=nums[mid]){
-                if(target>=nums[low] && target<nums[mid]){
-                    high=mid-1;
-                }else low =mid+1;
-            }
-            else {
-                if(target>nums[mid] && target<=nums[high]){
+            if(nums[low]<nums[mid]){
+                if(target<nums[low] || target>nums[mid]){
                     low = mid+1;
-                }else high = mid-1;
+                }else high =mid-1;
             }
+            else if(nums[low]>nums[mid]) {
+                if(target<nums[mid] || target>nums[high]){
+                    high = mid-1;
+                }else low = mid+1;
+            }
+            else low++;
         }
         return -1;
     }
