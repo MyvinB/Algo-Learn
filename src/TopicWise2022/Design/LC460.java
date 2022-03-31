@@ -37,6 +37,7 @@ public class LC460 {
                 node.prev = head;
                 node.next = head_next;
                 head_next.prev= node;
+                size++;
             }
 
             public void removeNode(Node node){
@@ -44,6 +45,7 @@ public class LC460 {
                 Node prev = node.prev;
                 prev.next = next;
                 next.prev = prev;
+                size--;
             }
 
             Node removeLast(){
@@ -63,15 +65,50 @@ public class LC460 {
             freqMap = new HashMap<>();
             map = new HashMap<>();
             this.capacity = capacity;
-
         }
 
         public int get(int key) {
-
+            Node node = map.get(key);
+            if(node==null) return -1;
+            updateNode(node);
+            return node.val;
         }
 
         public void put(int key, int value) {
+            if(capacity==0) return;
+            Node node = null;
+            if(map.containsKey(key)){
+                node = map.get(key);
+                node.val = value;
+                updateNode(node);
+            }else{
+                node = new Node();
+                node.key = key;
+                node.val = value;
+                if(map.size() == capacity){
+                    DList oldList = freqMap.get(leastfreqCount);
+                    Node temp = oldList.removeLast();
+                    map.remove(temp.key);
+                }
+                leastfreqCount = 1;
+                DList newList = freqMap.getOrDefault(node.freq,new DList());
+                newList.addNode(node);
+                map.put(key,node);
+                freqMap.put(leastfreqCount,newList);
+            }
+        }
 
+        //Helper updated the value when already exisiting key or getting the calue
+        public void updateNode(Node node){
+            DList oldList = freqMap.get(node.freq);
+            oldList.removeNode(node);
+            if(leastfreqCount==node.freq && oldList.size==0){
+                leastfreqCount++;
+            }
+            node.freq++;
+            DList newList = freqMap.getOrDefault(node.freq,new DList());
+            newList.addNode(node);
+            freqMap.put(node.freq,newList);
         }
     }
 }
