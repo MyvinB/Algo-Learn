@@ -80,3 +80,37 @@ Write a program to simulate dead lock
 
 Questions not yet asked but imp to know
 What is cap theorm? 
+
+
+O/p questions
+class X {
+static int i = 11;
+
+static{
+i = i-- - --i;
+i = 11 - 9 = 2
+}
+
+{
+i = i++ + ++i;
+}
+}
+
+class Y extends X{
+static{
+i = --i - i--;
+i =  1 - 1 = 0
+}
+{
+i = ++i + i++;
+}
+}
+
+public class DriverClass{
+public static void main(String[] args){
+Y y = new Y();
+System.out.println(y.i);
+}
+}
+
+What is the o/p of this program
