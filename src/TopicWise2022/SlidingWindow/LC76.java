@@ -14,32 +14,33 @@ public class LC76 {
     }
 
     public static String minWindow(String s, String t) {
-        int map[]=new int[128];
+        int[] map = new int[128];
+        int lo=0,count=0,minLength = Integer.MAX_VALUE,minStart = -1, minEnd = -1;
         for(int i=0;i<t.length();i++){
             map[t.charAt(i)]++;
         }
-        int lo=0,count=0,minLength=Integer.MAX_VALUE,minStart=-1,minEnd=-1;
         for(int hi=0;hi<s.length();hi++){
             if(map[s.charAt(hi)]>0){
                 count++;
             }
             map[s.charAt(hi)]--;
-            if(count==t.length()){
-                while(lo<hi &&  map[s.charAt(lo)]<0){
+            if(count == t.length()){
+                //Move low pointer till we have the substring
+                while(lo<hi && map[s.charAt(lo)]<0){
                     map[s.charAt(lo)]++;
                     lo++;
                 }
                 if(minLength>hi-lo+1){
-                    minLength=hi-lo+1;
-                    minStart=lo;
-                    minEnd=hi+1;
+                    minLength = hi-lo+1;
+                    minStart = lo;
+                    minEnd = hi+1;
                 }
                 map[s.charAt(lo)]++;
                 lo++;
                 count--;
             }
-
         }
+
         return minStart==-1?"":s.substring(minStart,minEnd);
     }
 }
