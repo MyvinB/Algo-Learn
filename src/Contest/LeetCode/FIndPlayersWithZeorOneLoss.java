@@ -1,9 +1,6 @@
 package Contest.LeetCode;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * @author mmichaelbarboza
@@ -43,7 +40,12 @@ public class FIndPlayersWithZeorOneLoss {
         }
         System.out.println(won);
         System.out.println(lostOne);
-        return null;
+        Collections.sort(won);
+        Collections.sort(lostOne);
+        List<List<Integer>> res = new ArrayList<>();
+        res.add(won);
+        res.add(lostOne);
+        return res;
 
     }
 }
