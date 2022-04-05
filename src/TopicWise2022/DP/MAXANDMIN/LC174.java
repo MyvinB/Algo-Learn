@@ -34,8 +34,17 @@ public class LC174 {
             dp[m-1][j] = Math.max(prev-cur,1);
         }
 
+        for(int i=m-2;i>=0;i--){
+            for(int j=n-2;j>=0;j--){
+                int down = dp[i+1][j];
+                int right = dp[i][j+1];
+                dp[i][j] = Math.min(down,right) - dungeon[i][j];
+                dp[i][j] = Math.max(dp[i][j],1);
+            }
+        }
+
         System.out.println(Arrays.deepToString(dp));
-        return 0;
+        return dp[0][0];
 
     }
 
