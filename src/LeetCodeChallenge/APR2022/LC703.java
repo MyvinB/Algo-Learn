@@ -17,10 +17,10 @@ public class LC703 {
         PriorityQueue<Integer> pq;
         int k ;
         public KthLargest(int k, int[] nums) {
-            k = this.k;
-            pq = new PriorityQueue<>();
+            this.k = k;
+            pq = new PriorityQueue<>(k);
             for(int i=0;i<nums.length;i++){
-                pq.offer(nums[i]);
+                add(nums[i]);
             }
         }
 
