@@ -18,16 +18,16 @@ public class LC682 {
         Stack<Integer> stack = new Stack<>();
         int sum = 0;
         for(int i=0;i<ops.length;i++){
-            if(ops[i] == "C"){
+            System.out.println(ops[i]);
+            if(ops[i].equals("C")){
                 stack.pop();
             }
-            else if(ops[i]== "D"){
+            else if(ops[i].equals("D")){
                 stack.push(stack.peek()*2);
             }
-            else if(ops[i] == "+"){
-                int prev1 = stack.pop();
-                int newEl = prev1 + stack.peek();
-                stack.push(prev1);
+            else if(ops[i].equals("+")){
+                int size = stack.size();
+                int newEl = stack.get(size-1) + stack.get(size-2);
                 stack.push(newEl);
             }
             else stack.push(Integer.parseInt(ops[i]));
