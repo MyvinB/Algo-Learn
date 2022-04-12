@@ -22,26 +22,27 @@ public class LC1260 {
         int m = grid[0].length;
         int mod = n * m;
         k = k % mod; // minimize the k value
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                int p = j + k; // defines which col
-                int r = p / (m); // defines which row
-                if (p < m) {
-                    temp[i][p] = grid[i][j];
-                } else {
-                    temp[(i + r) % n][p % m] = grid[i][j];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                int c = j+ k;
+                int r =  c/m;
+                if(c<m){
+                    temp[i][c] = grid[i][j];
+                }
+                else{
+                    temp[(i+r)%n][c%m] = grid[i][j];
                 }
             }
         }
-        // making temp grid into list
-        List<List<Integer>> result = new LinkedList<>();
-        LinkedList<Integer> c = new LinkedList<>();
-        for (int[] t : temp) {
-            for (int i : t) {
-                c.add(i);
+
+        List<List<Integer>> list = new ArrayList<>();
+        for(int i=0;i<n;i++){
+            List<Integer> tempList = new ArrayList<>();
+            for(int j=0;j<m;j++){
+                tempList.add(temp[i][j]);
             }
-            result.add(c);
+            list.add(tempList);
         }
-        return result;
+        return list;
     }
 }
