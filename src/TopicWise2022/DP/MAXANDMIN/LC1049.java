@@ -28,4 +28,20 @@ public class LC1049 {
 
         return sum - 2*dp[n][sum/2];
     }
+
+
+    public static int lastStoneWeightIIOptimised(int[] stones) {
+        int n = stones.length;
+        int sum = 0;
+        for(int i=0;i<n;i++) sum+= stones[i];
+        int[] dp = new int[sum/2+1];
+        for(int i=1;i<=n;i++){
+            for(int j=sum/2;j>=0;j--){
+                if(j>=stones[i-1]){
+                    dp[j] = Math.max(dp[j],dp[j-stones[i-1]]+stones[i-1]);
+                }
+            }
+        }
+        return sum - 2*dp[sum/2];
+    }
 }
