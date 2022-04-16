@@ -5,5 +5,5 @@
 [![Forks](https://img.shields.io/github/forks/myvinb/Algo-Learn?color=orange)](https://github.com/myvinb/Algo-Learn/network/members)
 [![Visits](https://badges.pufler.dev/visits/myvinb/Algo-Learn?color=blueviolet)](https://badges.pufler.dev)
 [![Created](https://badges.pufler.dev/created/myvinb/Algo-Learn?color=yellowgreen)](https://badges.pufler.dev)
-<br><br>
+<br><br><br>
 [Status](https://docs.google.com/spreadsheets/d/1KCrh5Cb92PvTl9koItWz1RUYEsWYgvFhosY-JtcyFcw/edit#gid=0)
