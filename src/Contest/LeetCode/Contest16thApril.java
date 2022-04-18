@@ -55,7 +55,7 @@ public class Contest16thApril {
             int[] temp = Arrays.copyOf(curAccount,curAccount.length);
             for(int i=curAccount.length-1;i>=0;i--){
                 if(curAccount[i]>0){
-                    double no = (int)sum/t[i];
+                    double no = (long)sum/t[i];
                     double possibleAmount = no*t[i];
                     if(no<=curAccount[i] && possibleAmount<=sum){
                         sum-=possibleAmount;
