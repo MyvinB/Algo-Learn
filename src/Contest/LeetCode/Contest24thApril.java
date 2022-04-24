@@ -10,7 +10,9 @@ import java.util.*;
 public class Contest24thApril {
 
     public static void main(String[] args) {
-
+        List<Integer> res = new ArrayList<>();
+        res.add(1);
+        System.out.println(res.size());
     }
 
     public List<Integer> intersection(int[][] nums) {
@@ -50,4 +52,50 @@ public class Contest24thApril {
         }
         return set.size();
     }
+
+    public int[] countRectangles(int[][] rectangles, int[][] points) {
+        int[] res = new int[points.length];
+        List<List<Integer>> group = new ArrayList<>(101);
+        for(int i = 0;i<101;i++){
+            group.add(new ArrayList<>());
+        }
+        for(int[] rec:rectangles){
+            int l = rec[0];
+            int h = rec[1];
+            group.get(h).add(l);
+        }
+
+        for(int i=0;i<group.size();i++){
+            Collections.sort(group.get(i));
+        }
+        for(int i=0;i<points.length;i++){
+            int count =0;
+            int l = points[i][0];
+            int h = points[i][1];
+            for(int k=h;k<101;k++){
+                List<Integer> temp = group.get(k);
+                int index =  binarySearch(temp,l);
+                count += temp.size() - index;
+            }
+            res[i] = count;
+        }
+        return res;
+    }
+
+    public int binarySearch(List<Integer> res,int target){
+        //If it's not there low will move to size making count zero or else count index will be one value less
+        int low = 0;
+        int high = res.size();
+        while(low<high){
+            int mid = low + (high-low)/2;
+            if(res.get(mid)<target){
+                low = mid+1;
+            }else {
+                high = mid;
+            }
+        }
+        return low;
+    }
+
+
 }
