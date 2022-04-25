@@ -16,6 +16,9 @@ public class LC1155NumberOfDiceRollsWithTargetSum {
         int[][] dp = new int[n+1][target+1];
         //If zero there is one possible way
         dp[0][0] = 1;
+
+        //We do not do dp[i][0] =1 cause like coin change problem we do not have the option to choose only one coin simila
+        //but vastly different.
         for(int i=1;i<=n;i++){
             for(int j=1;j<=target;j++){
                 for(int t=1;t<=k;t++){
