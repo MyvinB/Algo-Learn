@@ -7,7 +7,7 @@ import java.util.Arrays;
  * on 10:28 PM 4/5/2022
  * Time Taken:
  */
-public class LC322 {
+public class  LC322 {
     public static void main(String[] args) {
         System.out.println(coinChange(new int[]{2},3));
     }
