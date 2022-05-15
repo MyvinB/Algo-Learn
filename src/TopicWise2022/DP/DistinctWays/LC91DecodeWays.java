@@ -1,4 +1,4 @@
-package TopicWise2022.DP;
+package TopicWise2022.DP.DistinctWays;
 
 /**
  * @author mmichaelbarboza

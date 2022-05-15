@@ -10,7 +10,7 @@ public class LC2267 {
         int m = grid.length;
         int n = grid[0].length;
         Boolean [][][]memo = new Boolean[m][n][m+n];
-        dfs(grid,0,0,0,memo);
+       return  dfs(grid,0,0,0,memo);
     }
 
     public boolean dfs(char[][] grid,int i,int j,int bal,Boolean[][][] visited){
