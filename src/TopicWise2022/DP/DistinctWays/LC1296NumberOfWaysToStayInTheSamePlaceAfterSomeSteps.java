@@ -3,10 +3,10 @@ package TopicWise2022.DP.DistinctWays;
 public class LC1296NumberOfWaysToStayInTheSamePlaceAfterSomeSteps {
 
     public static void main(String[] args) {
-
+        System.out.println(numWays(1,2));
     }
 
-    public int numWays(int steps, int arrLen) {
+    public static int numWays(int steps, int arrLen) {
         int min = Math.min(steps,arrLen);
         long[][] dp = new long[steps+1][min+1];
         dp[0][0] = 1;
