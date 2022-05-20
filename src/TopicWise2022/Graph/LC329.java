@@ -11,12 +11,13 @@ import java.util.Queue;
 public class LC329 {
 
     public static void main(String[] args) {
-
+        int[][] t = new int[][]{{9,9,4},{6,6,8},{2,1,1}};
+        System.out.println(longestIncreasingPathTopo(t));
     }
-    int[][] dir = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
+    static int[][]  dir = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
 ///-------------------------------------------------------------------------------------------------------------------Topological Sort Khan algo------------------------------------------------------------------
 
-    public int longestIncreasingPathTopo(int[][] matrix) {
+    public static int longestIncreasingPathTopo(int[][] matrix) {
         if(matrix.length==0) return 0;
         int n = matrix.length;
         int m = matrix[0].length;
