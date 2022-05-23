@@ -9,8 +9,8 @@ import java.util.Stack;
 public class LC84 {
 
     public static void main(String[] args) {
-        int[] heights = new int[]{2,1,5,6,2,3};
-        System.out.println(largestRectangleArea(heights));
+        int[] heights = new int[]{3,1,5,6,2,3};
+        System.out.println(largestRectangleAreaOnePass(heights));
     }
     //Striver you rock hope i never forger this 3 pas soln
     public static int largestRectangleArea(int[] heights) {
