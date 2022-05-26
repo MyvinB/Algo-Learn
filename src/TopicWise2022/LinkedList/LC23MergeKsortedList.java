@@ -1,6 +1,8 @@
 package TopicWise2022.LinkedList;
 
 
+import TopicWise2022.common.ListNode;
+
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
@@ -11,13 +13,7 @@ import java.util.PriorityQueue;
  */
 public class LC23MergeKsortedList {
 
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
+
 
     public static void main(String[] args) {
 
