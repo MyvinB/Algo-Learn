@@ -13,6 +13,7 @@ public class LC139WordBreak {
 
     public static void main(String[] args) {
         String s = "leetcode";
+        System.out.println(s.substring(4,8));
         List<String> wordDict = new ArrayList<>();
         wordDict.add("leet");
         wordDict.add("code");
