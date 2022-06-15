@@ -24,7 +24,7 @@ public class LC25 {
             cur = prev.next;
             next = cur.next;
             for(int i=1;i<k;i++){
-                cur.next = next.next.;
+                cur.next = next.next;
                 next.next = prev.next;
                 prev.next = next;
                 next = cur.next;
@@ -37,4 +37,4 @@ public class LC25 {
 
 
     }
-}
+
