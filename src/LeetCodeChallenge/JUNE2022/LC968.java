@@ -1,9 +1,29 @@
 package LeetCodeChallenge.JUNE2022;
 
-import TopicWise2022.Tree.common.TreeNode;
-import com.sun.source.tree.BreakTree;
+
+
+
 
 public class LC968 {
+
+    public class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        TreeNode() {
+        }
+
+        public TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
 
     public static void main(String[] args) {
 
