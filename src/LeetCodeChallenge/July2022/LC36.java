@@ -16,7 +16,7 @@ public class LC36 {
                 {".",".",".","4","1","9",".",".","5"},
                 {".",".",".",".","8",".",".","7","9"}
         };
-        isValidSudoku(s);
+//        isValidSudoku(s);
     }
 
     public static boolean isValidSudoku(char[][] board) {
