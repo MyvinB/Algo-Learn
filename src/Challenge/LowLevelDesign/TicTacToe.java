@@ -14,7 +14,6 @@ public class TicTacToe {
         this.board = new int[n][n];
         this.rowSum = new int[n];
         this.colSum=new int[n];
-
     }
 
     /*
