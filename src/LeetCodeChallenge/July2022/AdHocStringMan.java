@@ -3,7 +3,7 @@ package LeetCodeChallenge.July2022;
 public class AdHocStringMan {
 
     public static void main(String[] args) {
-        String ip = "You make a lot of sense";
+        String ip = "How are you";
         int l = ip.length()-1;
         int r = ip.length()-1;
         StringBuilder sb = new StringBuilder();
