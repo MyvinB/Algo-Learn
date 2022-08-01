@@ -31,6 +31,6 @@ public class LCContest31 {
 
 
     public int maximumGroups(int[] grades) {
-
+        return -1;
     }
 }
