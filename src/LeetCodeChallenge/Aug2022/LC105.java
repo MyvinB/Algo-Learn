@@ -27,7 +27,12 @@ public class LC105 {
         TreeNode root = new TreeNode(preorder[preStart]);
         int inRoot = map.get(root.val);
         int numsLeft = inRoot-inStart;
+        //preStart+1 -> +1 we do not need the root element so +1
+        //preStart+numsLeft -> end would be the numOfelement in the left plus it's zero index
+        //inRoot-1 -> we do not need the root elment in the root
         root.left = buildTree(preorder,preStart+1,preStart+numsLeft,inorder,inStart,inRoot-1,map);
+        //preStart+numsLeft+1 -> now we need to start from the right so numOfelemnts on the left +1 to get the right element
+        //inRoot+1 -> We do not need the root element
         root.right = buildTree(preorder,preStart+numsLeft+1,preEnd,inorder,inRoot+1,inEnd,map);
         return root;
     }
