@@ -8,7 +8,7 @@ package TopicWise2022.Tree.common;
  * Time Taken:
  */
 
-public class TreeNode {
+public class TreeNode implements TreePrinter.PrintableNode {
      public int val;
     public TreeNode left;
     public TreeNode right;
@@ -24,6 +24,21 @@ public class TreeNode {
         this.val = val;
         this.left = left;
         this.right = right;
+    }
+
+    @Override
+    public TreePrinter.PrintableNode getLeft() {
+        return left;
+    }
+
+    @Override
+    public TreePrinter.PrintableNode getRight() {
+        return right;
+    }
+
+    @Override
+    public String getText() {
+        return String.valueOf(val);
     }
 }
 
