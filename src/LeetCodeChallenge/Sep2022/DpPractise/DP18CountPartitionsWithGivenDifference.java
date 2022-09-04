@@ -13,10 +13,10 @@ public class DP18CountPartitionsWithGivenDifference {
         if(sum-d <0 || (sum-d)%2 ==1) return 0;
         // Write your code here.
         int[] dp = new int[target+1];
-        //if target == 0;
+        //if the first number is zero and sum is zero there are two ways either we take the zero or we do not does not make a diff but its counted as 2
         if(nums[0]==0) dp[0] = 2;
         else dp[0] = 1;
-        //if idx==0 and target==a[0]
+        //if idx==0 and target==a[0] handle zero condition or else it will be one again after making two
         if(nums[0]!=0 && nums[0]<=target) dp[nums[0]] = 1;
         for(int i=1;i<n;i++){
             for(int j=target;j>=0;j--){
