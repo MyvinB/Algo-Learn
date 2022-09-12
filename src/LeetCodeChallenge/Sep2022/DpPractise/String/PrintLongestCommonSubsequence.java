@@ -1,4 +1,4 @@
-package LeetCodeChallenge.Sep2022.DpPractise;
+package LeetCodeChallenge.Sep2022.DpPractise.String;
 
 public class PrintLongestCommonSubsequence {
 
