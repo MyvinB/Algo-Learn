@@ -1,4 +1,4 @@
-package LeetCodeChallenge.Sep2022.DailyChallenege;
+package LeetCodeChallenge.Sep2022.DpPractise.LIS;
 
 import java.util.Arrays;
 
