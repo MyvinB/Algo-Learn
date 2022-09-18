@@ -81,4 +81,24 @@ public class LC300 {
         System.out.println(Arrays.toString(lis));
         return max;
     }
+
+
+    //Better time n logn
+    public int tabulationFasterTime(int[] nums){
+        int n = nums.length;
+        int[] temp = new int[n];
+        int size = 0;
+        for(int x:nums){
+            int i = 0, j = size;
+            while(i!=j){
+                int mid = i + (j-i)/2;
+                if(temp[mid]<x){
+                    i = mid+1;
+                }else j = mid;
+            }
+            temp[i] = x;
+            if(i==size)size++;
+        }
+        return size;
+    }
 }
