@@ -24,7 +24,7 @@ public class LC673 {
                     if (dp[i] == 1 + dp[j]) {
                         //increment
                         count[i] += count[j];
-                    }else if(dp[j]+1>dp[i]) //reset only when we find something bigger that is inherit whatever count of j
+                    }else if(dp[j]+1>dp[i]) //reset only when we find something bigger that is inherit whatever count of j as we are looking for the longest subsequence number
                         count[i] = count[j];
                     dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
