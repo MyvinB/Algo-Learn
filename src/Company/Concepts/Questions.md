@@ -6,8 +6,8 @@ Difference between http vs https
 Java 
 Q Internal Working of stuff -> md
 Q Why do we need to override equals and hashcode method -> md
-Q How do you create a singleton class in java -> Practise
-Q How do you create a immmutable class in java -> Practise
+Q How do you create a singleton class in java -> https://www.geeksforgeeks.org/singleton-class-java/
+Q How do you create a immmutable class in java -> immutable java 
 
 
 
@@ -114,3 +114,17 @@ System.out.println(y.i);
 }
 
 What is the o/p of this program
+
+
+What are the different size of int ,long,float ,boolean?
+byte	1 byte	Stores whole numbers from -128 to 127
+short	2 bytes	Stores whole numbers from -32,768 to 32,767
+int	4 bytes	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long	8 bytes	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float	4 bytes	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double	8 bytes	Stores fractional numbers. Sufficient for storing 15 decimal digits
+boolean	1 bit	Stores true or false values
+char	2 bytes	Stores a single character/letter or ASCII values
+
+
+Difference between final finally and finalize

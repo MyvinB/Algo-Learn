@@ -3,7 +3,9 @@ package Company.Concepts.Practise;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -82,6 +84,9 @@ public class Java8 {
         list1.stream()
                 .filter(num -> num % 5 == 0)
                 .forEach(System.out::println);
+        //Give the count of each character in a string using java 8 IMP
+        String str= "Communication";
+        Map<String, Long> result1 = Arrays.stream(str.split("")).map(String::toLowerCase).collect(Collectors.groupingBy(s -> s, LinkedHashMap::new, Collectors.counting()));
 
     }
 }
