@@ -1,5 +1,7 @@
 package LeetCodeChallenge.Oct2022.Daily;
 
+import TopicWise2022.Tree.common.TreeNode;
+
 public class LC112 {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         return dfs(root,0,targetSum);
