@@ -4,13 +4,7 @@ import TopicWise2022.common.ListNode;
 
 public class LC21 {
 
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-
-    }
-    //-1--> 1->1->2->3->3
-    // 1 ->2 3
-    // ->1 3 4
-    public ListNode mergeList(ListNode l1,ListNode l2){
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(-1);
         ListNode cur = dummy;
         while(l1!=null || l2!=null){
@@ -34,4 +28,6 @@ public class LC21 {
         }
         return dummy.next;
     }
+
+
 }
