@@ -6,29 +6,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class LC144 {
+public class LC145 {
 
     public static void main(String[] args) {
 
     }
 
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> postorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
-        if(root!=null)
-            stack.add(root);
+        if(root!=null) stack.push(root);
         List<Integer> res = new ArrayList<>();
         while(!stack.isEmpty()){
             root = stack.pop();
-            res.add(root.val);
-            if(root.right!=null){
-                stack.add(root.right);
-            }
+            res.add(0,root.val);
             if(root.left!=null){
-                stack.add(root.left);
+                stack.push(root.left);
             }
-
+            if(root.right!=null){
+                stack.push(root.right);
+            }
         }
         return res;
-
     }
 }
