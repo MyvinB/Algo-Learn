@@ -6,8 +6,8 @@ import java.util.Stack;
 public class LC84 {
 
     public static void main(String[] args) {
-        int[] t = new int[]{2,1,5,6,2,3,1};
-        System.out.println(largestRectangleArea(t));
+        int[] t = new int[]{1,0};
+        System.out.println(largestRectangleAreaOptimised(t));
     }
     //tghink of boundary as plus
     public static int largestRectangleArea(int[] heights) {
