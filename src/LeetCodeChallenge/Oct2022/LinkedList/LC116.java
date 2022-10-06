@@ -7,7 +7,7 @@ public class LC116 {
     public static void main(String[] args) {
 
     }
-
+    //This is not bad but when it comes to solving both one and two of populating right pointer there is one code that is better LC117
     public Node connect(Node root) {
         Node levelStart = root;
         while(levelStart!=null){
