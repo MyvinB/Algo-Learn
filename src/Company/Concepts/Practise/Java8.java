@@ -72,7 +72,7 @@ public class Java8 {
         int result = numbers
                 .stream()
                 .reduce(0, (subtotal, element) -> subtotal + element);
-        System.out.println(result);
+        System.out.println(result+"Result of using reduc e");
 
         //Use of filtrer
         // Creating a list of Integers
