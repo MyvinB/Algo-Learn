@@ -14,6 +14,5 @@ public class LC1306 {
         //logic
         arr[start] = -arr[start];
         return canReach(arr,start+arr[start]) || canReach(arr,start-arr[start]);
-
     }
 }
