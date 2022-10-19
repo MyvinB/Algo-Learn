@@ -11,9 +11,7 @@ public class RodCutting {
     public static void main(String[] args) {
 
     }
-    public static int cutRod(int price[], int n) {
 
-    }
     //Not doing the memo part just need it to tabulate
     public int recurMemo(int[] price,int lenLeft, int idx){
         if(idx==0){
