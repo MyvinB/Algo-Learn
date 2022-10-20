@@ -1,5 +1,6 @@
 package LeetCodeChallenge.JAN2022;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 /**
@@ -9,8 +10,8 @@ import java.util.Stack;
 public class LC84 {
 
     public static void main(String[] args) {
-        int[] heights = new int[]{3,1,5,6,2,3};
-        System.out.println(largestRectangleAreaOnePass(heights));
+        int[] heights = new int[]{2,1,5,6,2,3};
+        System.out.println(largestRectangleArea(heights));
     }
     //Striver you rock hope i never forger this 3 pas soln
     public static int largestRectangleArea(int[] heights) {
@@ -42,6 +43,8 @@ public class LC84 {
             else rightSmaller[i]=stack.peek()-1;
             stack.push(i);
         }
+        System.out.println(Arrays.toString(leftSmaller));
+        System.out.println(Arrays.toString(rightSmaller));
         int max = Integer.MIN_VALUE;
         for(int i=0;i<heights.length;i++){
             int area = (rightSmaller[i]-leftSmaller[i]+1) * heights[i];
