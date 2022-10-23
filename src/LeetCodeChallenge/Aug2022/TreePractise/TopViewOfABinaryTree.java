@@ -34,6 +34,14 @@ public class TopViewOfABinaryTree {
             this.root = root;
             this.position = position;
         }
+
+        @Override
+        public String toString() {
+            return "Pair{" +
+                    "root=" + root +
+                    ", position=" + position +
+                    '}';
+        }
     }
     //Using NLogN considering a skwed tree
     public static ArrayList<Integer> getTopView(BinaryTreeNode root) {

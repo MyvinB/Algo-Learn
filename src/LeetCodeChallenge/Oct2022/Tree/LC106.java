@@ -23,7 +23,7 @@ public class LC106 {
         TreeNode root = new TreeNode(postOrder[postEnd]);
         int inRoot = map.get(root.val);
         int numsLeft = inRoot-inStart;
-        //postEnd is postStart+numsLeft -1 minus one bcz zero based indexing
+        //postEnd is postStart+numsLeft
         root.left = buildTree(postOrder,postStart ,postStart+numsLeft-1,inOrder,inStart,inRoot-1,map);
         //since we do not consider the right element postEnd is minus one
         //and postStart we have already considered the left elements
