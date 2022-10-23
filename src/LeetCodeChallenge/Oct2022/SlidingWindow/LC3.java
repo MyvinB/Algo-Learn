@@ -1,4 +1,4 @@
-package LeetCodeChallenge.Oct2022.Daily;
+package LeetCodeChallenge.Oct2022.SlidingWindow;
 
 public class LC3 {
 
