@@ -1,4 +1,4 @@
-package LeetCodeChallenge.Nov2022.Revision.Stack;
+package LeetCodeChallenge.Nov2022.Revise;
 
 import java.util.Stack;
 
