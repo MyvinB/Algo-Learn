@@ -14,7 +14,7 @@ public class LC126 {
         //"hit"
         //"cog"
         //["hot","dot","dog","lot","log","cog"]
-        List<String> res = Arrays.asList("hot","dot","dog","lot","log");
+        List<String> res = Arrays.asList("hot","dot","dog","lot","log","cog");
         findLadders("hit","cog",res);
     }
 
@@ -37,7 +37,7 @@ public class LC126 {
                         String temp = new String(wordAr);
                         if(set.contains(temp) && visited.get(temp)==null ){
                             //+1 for child node
-                            visited.put(temp,level+1);
+                             visited.put(temp,level+1);
                             List<String> tempList = adjList.getOrDefault(word,new ArrayList<>());
                             tempList.add(temp);
                             adjList.put(word,tempList);
