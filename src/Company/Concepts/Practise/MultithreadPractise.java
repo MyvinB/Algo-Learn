@@ -3,8 +3,8 @@ package Company.Concepts.Practise;
 public class MultithreadPractise {
 
     public static void main(String[] args) {
-//        printEvenAndOdd();
-        printNumbers();
+        printEvenAndOdd();
+//        printNumbers();
     }
 
 //Q1-----------------------------------------------------------------------------------------------------------------------------------------------Printing Even and Odd using threads
