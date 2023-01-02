@@ -31,7 +31,6 @@ public class LC70 {
         //two take two steps there are two way ie 2 and 1 1
         dp[n-1] = 1;
         dp[n-2] =2;
-
         for(int i=n-3;i>=0;i--){
             dp[i] = dp[i+1]+dp[i+2];
         }
