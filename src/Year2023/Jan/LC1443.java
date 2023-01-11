@@ -28,6 +28,7 @@ public class LC1443 {
             if(t==parent) continue;
             total += getTime(adjList,hasApple,t,idx);
         }
+        //if you got apples at the node add +2 or if total from above is there then we have to caculate the path add plus 2 no path for zero index
         if(idx!=0 &&(total>0 || hasApple.get(idx))) total+=2;
         return total;
     }
