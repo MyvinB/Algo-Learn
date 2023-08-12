@@ -82,12 +82,12 @@ public class TreePrinter
                 for (int j = 0; j < line.size(); j++) {
 
                     // split node
-                    char c = ' ';
+                    String c = " ";
                     if (j % 2 == 1) {
                         if (line.get(j - 1) != null) {
-                            c = (line.get(j) != null) ? '┴' : '┘';
+                            c = (line.get(j) != null) ? "┴" : "┘";
                         } else {
-                            if (j < line.size() && line.get(j) != null) c = '└';
+                            if (j < line.size() && line.get(j) != null) c = "└";
                         }
                     }
                     System.out.print(c);
