@@ -14,6 +14,5 @@ public class LC205 {
         }
         return true;
     }
-
-
+    
 }
